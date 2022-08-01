@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&display=swap');
+
+
+.App {
+  font-family: 'Outfit', sans-serif;
+  text-align: center;
+}
+
+.one {
+  background-color: white;
+  border-right: 1px solid black;
+  min-height: 100vh;
+}
+
+.two {
+  background-color: white;
+}
+
+.prompt {
+  margin-top: 30px;
+  width: 60vw;
+  color: #749672 !important;
+}
+
+label.Mui-focused {
+  color: #749672 !important;
+}
+
+.MuiOutlinedInput-root {
+  border-color: #749672;
+}
+
+.Mui-focused fieldset {
+  border-color: #749672;
+}
+
+.MuiInput-underline:before {
+  border-color: #749672;
+}
+
+.MuiInput-underline:hover:before {
+  border-color: #749672;
+}
+
+.MuiInput-underline:after {
+  border-color: #749672;
+}

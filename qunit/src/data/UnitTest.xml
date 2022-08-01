@@ -1,0 +1,943 @@
+<QUint Vender="PipePlus Technology Ltd." Copywrite="Reserved 2010 PipePlus Technology Ltd." Product="Quick Uint File" Version="1.0">
+  <Unit Name="Length;Distance" Language="1" FunctionIndex="0" Order="10" ViewCount="10">
+    <Item1 Name="Meters" Prompt="m" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Admiralty Miles" Prompt="amile" Scale="0.000539612" Base="0" Order="0"/>
+    <Item3 Name="Angstroms" Prompt="Angstrom" Scale="10000000000" Base="0" Order="0"/>
+    <Item4 Name="Astronomical Units" Prompt="Astronomical" Scale="6.68456E-12" Base="0" Order="0"/>
+    <Item5 Name="Centimeters" Prompt="cm" Scale="100" Base="0" Order="0"/>
+    <Item6 Name="Chains" Prompt="chn" Scale="0.049709695" Base="0" Order="0"/>
+    <Item7 Name="Fathoms" Prompt="Fa" Scale="0.546806649" Base="0" Order="0"/>
+    <Item8 Name="Feet" Prompt="ft" Scale="3.280839895" Base="0" Order="0"/>
+    <Item9 Name="Feet (US Survey)" Prompt="USS ft" Scale="3.280833333" Base="0" Order="0"/>
+    <Item10 Name="Furlongs" Prompt="Fur" Scale="0.00497097" Base="0" Order="0"/>
+    <Item11 Name="Hands" Prompt="Hand" Scale="9.842519685" Base="0" Order="0"/>
+    <Item12 Name="Inches" Prompt="in" Scale="39.37007874" Base="0" Order="0"/>
+    <Item13 Name="Kilometers" Prompt="km" Scale="0.001" Base="0" Order="0"/>
+    <Item14 Name="Leagues (UK Land)" Prompt="UK Land Leagues" Scale="0.000207124" Base="0" Order="0"/>
+    <Item15 Name="Leagues (UK Sea)" Prompt="UK Sea Leagues" Scale="0.000179811" Base="0" Order="0"/>
+    <Item16 Name="Leagues (US)" Prompt="US Leagues" Scale="0.000180003" Base="0" Order="0"/>
+    <Item17 Name="Light Days" Prompt="ld" Scale="3.8607E-14" Base="0" Order="0"/>
+    <Item18 Name="Light Hours" Prompt="lh" Scale="9.26567E-13" Base="0" Order="0"/>
+    <Item19 Name="Light Minutes" Prompt="lm" Scale="5.5594E-11" Base="0" Order="0"/>
+    <Item20 Name="Light Seconds" Prompt="ls" Scale="3.33564E-9" Base="0" Order="0"/>
+    <Item21 Name="Light Years" Prompt="ly" Scale="1.05702E-16" Base="0" Order="0"/>
+    <Item22 Name="Links" Prompt="link" Scale="4.970969538" Base="0" Order="0"/>
+    <Item23 Name="Micrometers" Prompt="um" Scale="1000000" Base="0" Order="0"/>
+    <Item24 Name="Microns" Prompt="Micron" Scale="1000000" Base="0" Order="0"/>
+    <Item25 Name="Miles" Prompt="mile" Scale="0.000621371" Base="0" Order="0"/>
+    <Item26 Name="Millimeters" Prompt="mm" Scale="1000" Base="0" Order="0"/>
+    <Item27 Name="Mils" Prompt="mil" Scale="39370.07874" Base="0" Order="0"/>
+    <Item28 Name="Nanometers" Prompt="Nm" Scale="1000000000" Base="0" Order="0"/>
+    <Item29 Name="Nautical Miles (UK)" Prompt="UK Nautical Mile" Scale="0.000539376" Base="0" Order="0"/>
+    <Item30 Name="Nautical Miles (US)" Prompt="US Nautical Mile" Scale="0.000539956" Base="0" Order="0"/>
+    <Item31 Name="Navy Mile" Prompt="nmile" Scale="0.000539957" Base="0" Order="0"/>
+    <Item32 Name="Parsecs" Prompt="Parsec" Scale="3.24078E-17" Base="0" Order="0"/>
+    <Item33 Name="Picas" Prompt="Pica" Scale="236.2204724" Base="0" Order="0"/>
+    <Item34 Name="Points" Prompt="Point" Scale="2834.645669" Base="0" Order="0"/>
+    <Item35 Name="Rods" Prompt="Rod" Scale="0.198838782" Base="0" Order="0"/>
+    <Item36 Name="Roman Feet" Prompt="pede" Scale="3.379521936" Base="0" Order="0"/>
+    <Item37 Name="Roman Miles" Prompt="milia passuum" Scale="0.000675904" Base="0" Order="0"/>
+    <Item38 Name="Thous" Prompt="Thou" Scale="39370.07874" Base="0" Order="0"/>
+    <Item39 Name="Unciae (Roman Inches)" Prompt="Unciae" Scale="40.55426323" Base="0" Order="0"/>
+    <Item40 Name="Yards" Prompt="Yd" Scale="1.093613298" Base="0" Order="0"/>
+    <Item41 Name="Yards" Prompt="yd" Scale="1.0936" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Acceleration" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Meters per Second Squared" Prompt="m/s^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Centimeters per Second Squared" Prompt="cm/s^2" Scale="100" Base="0" Order="0"/>
+    <Item3 Name="Feet per Second Squared" Prompt="ft/s^2" Scale="3.280839895" Base="0" Order="0"/>
+    <Item4 Name="Gravity" Prompt="gn" Scale="0.101971621" Base="0" Order="0"/>
+    <Item5 Name="Inches per Second Squared" Prompt="in/s^2" Scale="39.37007874" Base="0" Order="0"/>
+    <Item6 Name="Yards per Second Squared" Prompt="yd/s^2" Scale="1.09361" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Angles" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Degrees" Prompt="deg" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Milliradians" Prompt="mrad" Scale="17.45329252" Base="0" Order="8"/>
+    <Item3 Name="Radians" Prompt="rad" Scale="0.017453293" Base="0" Order="1"/>
+    <Item4 Name="Grads" Prompt="g" Scale="1.111111111" Base="0" Order="0"/>
+    <Item5 Name="Minutes" Prompt="" Scale="60" Base="0" Order="0"/>
+    <Item6 Name="Right Angles" Prompt="L" Scale="1.111111111" Base="0" Order="0"/>
+    <Item7 Name="Seconds" Prompt="&quot;" Scale="3600" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Angular Velocity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Degrees per Second" Prompt="deg/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Radians per Hour" Prompt="rad/h" Scale="62.83185307" Base="0" Order="5"/>
+    <Item3 Name="RPMs" Prompt="RPM" Scale="0.166666667" Base="0" Order="4"/>
+    <Item4 Name="Degrees per Hour" Prompt="deg/h" Scale="3600" Base="0" Order="0"/>
+    <Item5 Name="Degrees per Microsecond" Prompt="deg/us" Scale="1E-6" Base="0" Order="0"/>
+    <Item6 Name="Degrees per Millisecond" Prompt="deg/ms" Scale="0.001" Base="0" Order="0"/>
+    <Item7 Name="Degrees per Minute" Prompt="deg/min" Scale="60" Base="0" Order="0"/>
+    <Item8 Name="Radians per Microsecond" Prompt="rad/us" Scale="1.74533E-8" Base="0" Order="0"/>
+    <Item9 Name="Radians per Millisecond" Prompt="rad/ms" Scale="1.74533E-5" Base="0" Order="0"/>
+    <Item10 Name="Radians per Minute" Prompt="rad/min" Scale="1.047197551" Base="0" Order="0"/>
+    <Item11 Name="Radians per Second" Prompt="rad/s" Scale="0.017453293" Base="0" Order="0"/>
+    <Item12 Name="Revolutions per Hour" Prompt="r/h" Scale="10" Base="0" Order="0"/>
+    <Item13 Name="Revolutions per Minute" Prompt="r/min" Scale="0.166666667" Base="0" Order="0"/>
+    <Item14 Name="Revolutions per Second" Prompt="r/s" Scale="0.002777778" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Area" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Square Meters" Prompt="m^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Acres" Prompt="acre" Scale="0.000247105" Base="0" Order="2"/>
+    <Item3 Name="Ares" Prompt="a" Scale="0.1" Base="0" Order="2"/>
+    <Item4 Name="Darcy (SQ um)" Prompt="D" Scale="1000000000000" Base="0" Order="2"/>
+    <Item5 Name="Dunams" Prompt="Dunam" Scale="0.001" Base="0" Order="2"/>
+    <Item6 Name="Hectares" Prompt="ha" Scale="0.0001" Base="0" Order="2"/>
+    <Item7 Name="Milli-Darcy" Prompt="mD" Scale="1E15" Base="0" Order="2"/>
+    <Item8 Name="Perches" Prompt="Perche" Scale="0.039536861" Base="0" Order="2"/>
+    <Item9 Name="Square Centimeters" Prompt="cm^2" Scale="10000" Base="0" Order="2"/>
+    <Item10 Name="Square Feet" Prompt="ft^2" Scale="10.76391042" Base="0" Order="2"/>
+    <Item11 Name="Square Inches" Prompt="in^2" Scale="1550.0031" Base="0" Order="2"/>
+    <Item12 Name="Square Kilometers" Prompt="km^2" Scale="1E-6" Base="0" Order="2"/>
+    <Item13 Name="Square Microns" Prompt="Micron^2" Scale="1000000000000" Base="0" Order="2"/>
+    <Item14 Name="Square Miles" Prompt="mile^2" Scale="3.9E-7" Base="0" Order="2"/>
+    <Item15 Name="Square Millimeters" Prompt="mm^2" Scale="1000000" Base="0" Order="2"/>
+    <Item16 Name="Square Yards" Prompt="yd^2" Scale="1.19599" Base="0" Order="2"/>
+    <Item17 Name="Tatami (Jo)" Prompt="Tatami(Jo)" Scale="0.600600601" Base="0" Order="2"/>
+    <Item18 Name="Tsubo" Prompt="Tsubo" Scale="0.3003003" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Capacity;Volume" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Cubic Meters" Prompt="m^3" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Acre-Feet" Prompt="Acre-Feet" Scale="0.000810713" Base="0" Order="0"/>
+    <Item3 Name="Acre-Inches" Prompt="Acre-Inches" Scale="0.009728558" Base="0" Order="0"/>
+    <Item4 Name="Barrels (Oil)" Prompt="Barrel" Scale="6.289986536" Base="0" Order="0"/>
+    <Item5 Name="Bushels (UK)" Prompt="UK Bushel" Scale="27.49912003" Base="0" Order="0"/>
+    <Item6 Name="Bushels (US)" Prompt="US Bushel" Scale="28.35238614" Base="0" Order="0"/>
+    <Item7 Name="Centiliters" Prompt="cl" Scale="100000" Base="0" Order="0"/>
+    <Item8 Name="Cubic Centimeters" Prompt="cm^3" Scale="1000000" Base="0" Order="0"/>
+    <Item9 Name="Cubic Feet" Prompt="ft^3" Scale="35.31466672" Base="0" Order="0"/>
+    <Item10 Name="Cubic Inches" Prompt="in^3" Scale="61023.74409" Base="0" Order="0"/>
+    <Item11 Name="Cubic Microns" Prompt="Micron^3" Scale="1E18" Base="0" Order="0"/>
+    <Item12 Name="Cubic Yards" Prompt="Yd^3" Scale="1.307950619" Base="0" Order="0"/>
+    <Item13 Name="Cups (US)" Prompt="US Cup" Scale="4226.870952" Base="0" Order="0"/>
+    <Item14 Name="Cups(Metric)" Prompt="Metric Cup" Scale="4000" Base="0" Order="0"/>
+    <Item15 Name="Deciliters" Prompt="dl" Scale="10000" Base="0" Order="0"/>
+    <Item16 Name="Dessertspoon (Metric)" Prompt="Dessertspoon" Scale="100000" Base="0" Order="0"/>
+    <Item17 Name="Dessertspoon (UK)" Prompt="Dessertspoon" Scale="137915.6042" Base="0" Order="0"/>
+    <Item18 Name="Dessertspoon (US)" Prompt="Dessertspoon" Scale="101444.9028" Base="0" Order="0"/>
+    <Item19 Name="Fluid Drams (UK)" Prompt="Dram" Scale="281568.4976" Base="0" Order="0"/>
+    <Item20 Name="Fluid Drams (US)" Prompt="Dram" Scale="270519.7409" Base="0" Order="0"/>
+    <Item21 Name="Fluid Ounces (UK)" Prompt="Ounce" Scale="35196.06219" Base="0" Order="0"/>
+    <Item22 Name="Fluid Ounces (US)" Prompt="Ounce" Scale="33814.96762" Base="0" Order="0"/>
+    <Item23 Name="Gallons (UK Dry)" Prompt="UK Dry Gallon" Scale="219.9929602" Base="0" Order="0"/>
+    <Item24 Name="Gallons (UK)" Prompt="UK Gallon" Scale="219.9753887" Base="0" Order="0"/>
+    <Item25 Name="Gallons (US Dry)" Prompt="US Dry Gallon" Scale="226.8190891" Base="0" Order="0"/>
+    <Item26 Name="Gallons (US)" Prompt="US Gallon" Scale="264.1794345" Base="0" Order="0"/>
+    <Item27 Name="Kiloliters" Prompt="kl" Scale="1" Base="0" Order="0"/>
+    <Item28 Name="Liters" Prompt="l" Scale="1000" Base="0" Order="0"/>
+    <Item29 Name="MegaGallons (UK)" Prompt="UK Mgal" Scale="0.000219975" Base="0" Order="0"/>
+    <Item30 Name="MegaGallons (US)" Prompt="US Mgal" Scale="0.000264179" Base="0" Order="0"/>
+    <Item31 Name="Milliliters" Prompt="ml" Scale="1000000" Base="0" Order="0"/>
+    <Item32 Name="Peck (US)" Prompt="US Peck" Scale="113.4095445" Base="0" Order="0"/>
+    <Item33 Name="Pecks (UK)" Prompt="UK Peck" Scale="109.9964801" Base="0" Order="0"/>
+    <Item34 Name="Pints (UK Dry)" Prompt="UK Dry Pint" Scale="1759.943682" Base="0" Order="0"/>
+    <Item35 Name="Pints (UK)" Prompt="UK Pint" Scale="1759.80311" Base="0" Order="0"/>
+    <Item36 Name="Pints (US Dry)" Prompt="US Dry Pint" Scale="1814.552713" Base="0" Order="0"/>
+    <Item37 Name="Pints (US)" Prompt="US Pint" Scale="2113.435476" Base="0" Order="0"/>
+    <Item38 Name="Quarts (UK Dry)" Prompt="Quart" Scale="879.9718409" Base="0" Order="0"/>
+    <Item39 Name="Quarts (UK)" Prompt="Quart" Scale="879.9015549" Base="0" Order="0"/>
+    <Item40 Name="Quarts (US Dry)" Prompt="Quart" Scale="907.2763564" Base="0" Order="0"/>
+    <Item41 Name="Quarts (US)" Prompt="Quart" Scale="1056.717738" Base="0" Order="0"/>
+    <Item42 Name="Tablespoon (Metric)" Prompt="Tablespoon" Scale="50000" Base="0" Order="0"/>
+    <Item43 Name="Tablespoon (UK)" Prompt="Tablespoon" Scale="68957.8021" Base="0" Order="0"/>
+    <Item44 Name="Tablespoon (US)" Prompt="Tablespoon" Scale="67629.93523" Base="0" Order="0"/>
+    <Item45 Name="Teaspoon (Metric)" Prompt="Teaspoon" Scale="200000" Base="0" Order="0"/>
+    <Item46 Name="Teaspoon (UK)" Prompt="Teaspoon" Scale="275831.2084" Base="0" Order="0"/>
+    <Item47 Name="Teaspoon (US)" Prompt="Teaspoon" Scale="202889.8057" Base="0" Order="0"/>
+    <Item48 Name="UK Barrels" Prompt="UK Barrel" Scale="6.285" Base="0" Order="0"/>
+    <Item49 Name="UK Gallons" Prompt="UK gal" Scale="219.98" Base="0" Order="0"/>
+    <Item50 Name="US Barrels" Prompt="US Barrel" Scale="6.2899" Base="0" Order="0"/>
+    <Item51 Name="US Gallons" Prompt="US gal" Scale="264.172" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Cover Capability" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Sq Meters per Cubic Meter" Prompt="m^2/m^3" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Sq Centimeters per Liter" Prompt="cm^2/L" Scale="10" Base="0" Order="2"/>
+    <Item3 Name="Sq Feet per UK Gallon" Prompt="ft^2/UK gal" Scale="0.0489337" Base="0" Order="2"/>
+    <Item4 Name="Sq Feet per US Gallon" Prompt="ft^2/US gal" Scale="0.0407458" Base="0" Order="2"/>
+    <Item5 Name="Sq Meters per Liter" Prompt="m^2/L" Scale="0.001" Base="0" Order="2"/>
+    <Item6 Name="Sq Yards per UK Gallon" Prompt="yd^2/UK gal" Scale="0.00543708" Base="0" Order="2"/>
+    <Item7 Name="Sq Yards per US Gallon" Prompt="yd^2/US gal" Scale="0.00452732" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Density" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilograms per Cubic Meter" Prompt="kg/m^3" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Gram/Milliliter" Prompt="g/ml" Scale="0.001" Base="0" Order="5"/>
+    <Item3 Name="Grams per Cubic Centimeter" Prompt="g/cm^3" Scale="0.001" Base="0" Order="5"/>
+    <Item4 Name="Grams per Cubic Meter" Prompt="g/m^3" Scale="1000" Base="0" Order="5"/>
+    <Item5 Name="Kilograms per Cubic Centimeter" Prompt="kg/cm^3" Scale="1E-6" Base="0" Order="5"/>
+    <Item6 Name="Long tons/yard^3(UK)" Prompt="Ln ton/yd^3" Scale="0.00075248" Base="0" Order="5"/>
+    <Item7 Name="Ounces per Cubic Foot" Prompt="oz/ft^3" Scale="0.998847369" Base="0" Order="5"/>
+    <Item8 Name="Ounces per Cubic Inch" Prompt="oz/in^3" Scale="0.000578037" Base="0" Order="5"/>
+    <Item9 Name="Picograms per Cubic Micron" Prompt="Picogram/Micron^3" Scale="1E-6" Base="0" Order="5"/>
+    <Item10 Name="Pound/US Berral" Prompt="lb/USBarrel" Scale="0.350139" Base="0" Order="5"/>
+    <Item11 Name="Pound/US Gallon" Prompt="lb/USgal" Scale="0.0083454" Base="0" Order="5"/>
+    <Item12 Name="Pound/Yard^3" Prompt="lb/yd^3" Scale="1.68549" Base="0" Order="5"/>
+    <Item13 Name="Pounds per Cubic Foot" Prompt="lb/ft^3" Scale="0.062427961" Base="0" Order="5"/>
+    <Item14 Name="Pounds per Cubic Inch" Prompt="lb/in^3" Scale="3.61273E-5" Base="0" Order="5"/>
+    <Item15 Name="green/Usgal" Prompt="gr/Usgal" Scale="0.058418" Base="0" Order="5"/>
+    <Item16 Name="green/cu ft" Prompt="gr/ft^3" Scale="0.436996" Base="0" Order="5"/>
+    <Item17 Name="green/cu in" Prompt="gr/in^3" Scale="0.252891" Base="0" Order="5"/>
+    <Item18 Name="short tons/yard^3(US)" Prompt="sh ton/yd^3" Scale="0.00084278" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Dynamic Viscocity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Pascal Seconds" Prompt="Pa.s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Centipoises" Prompt="cP" Scale="1000" Base="0" Order="2"/>
+    <Item3 Name="Kilogram Force Seconds per Sq Meter" Prompt="kgf.s/m^2" Scale="0.101972" Base="0" Order="2"/>
+    <Item4 Name="Kilogram per Meter Hour" Prompt="kg/m.h" Scale="3600" Base="0" Order="2"/>
+    <Item5 Name="Micropoises" Prompt="uP" Scale="10000000" Base="0" Order="2"/>
+    <Item6 Name="Millipoises" Prompt="mP" Scale="10000" Base="0" Order="2"/>
+    <Item7 Name="Poises" Prompt="P" Scale="10" Base="0" Order="2"/>
+    <Item8 Name="Pound Force Hour per Sq Feet" Prompt="lbf.h/ft^2" Scale="5.8E-6" Base="0" Order="2"/>
+    <Item9 Name="Pound Force Seconds per Sq Feet" Prompt="lbf.s/ft^2" Scale="0.020885" Base="0" Order="2"/>
+    <Item10 Name="Pound Force Seconds per Sq Inch" Prompt="lbf.s/in^2" Scale="0.00014504" Base="0" Order="2"/>
+    <Item11 Name="Poundal Force Seconds per Sq Feet" Prompt="pdl.s/ft^2" Scale="0.671969" Base="0" Order="2"/>
+    <Item12 Name="Pounds per Feet Hour" Prompt="lb/ft.h" Scale="2419.09" Base="0" Order="2"/>
+    <Item13 Name="Pounds per Feet Second" Prompt="lb/ft.s" Scale="8708700" Base="0" Order="2"/>
+    <Item14 Name="Reyn" Prompt="reyn" Scale="0.00014504" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Electric Capacitance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Farads" Prompt="F" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Farads" Prompt="Fint" Scale="1.00049024021771" Base="0" Order="1"/>
+    <Item3 Name="Magnetism Farads" Prompt="" Scale="1E-9" Base="0" Order="1"/>
+    <Item4 Name="Picofarads" Prompt="pF" Scale="1000000000000" Base="0" Order="1"/>
+    <Item5 Name="Static Farads" Prompt="sF" Scale="898700000000" Base="0" Order="1"/>
+  </Unit>
+  <Unit Name="Electric Charge" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Coulomb" Prompt="C" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Faraday" Prompt="" Scale="1.036E-5" Base="0" Order="9"/>
+    <Item3 Name="Ampere Hour" Prompt="A.h" Scale="0.0002778" Base="0" Order="3"/>
+    <Item4 Name="International Coulomb" Prompt="Cint" Scale="1.00015002250338" Base="0" Order="3"/>
+    <Item5 Name="Kilocoulomb" Prompt="kC" Scale="0.001" Base="0" Order="3"/>
+    <Item6 Name="Magnetism Coulomb" Prompt="" Scale="0.1" Base="0" Order="3"/>
+    <Item7 Name="Picocoulomb" Prompt="pC" Scale="1000000000000" Base="0" Order="3"/>
+    <Item8 Name="Static Coulomb" Prompt="sC" Scale="2998000000" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Electric Conductance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Simens" Prompt="S" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Absolute Simens" Prompt="" Scale="1E-9" Base="0" Order="8"/>
+    <Item3 Name="Picosimens" Prompt="pS" Scale="1000000000000" Base="0" Order="4"/>
+    <Item4 Name="Static Simens" Prompt="sS" Scale="898755200000" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Electric Current" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Amperes" Prompt="A" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Amperes" Prompt="Aint" Scale="1.00015002250338" Base="0" Order="3"/>
+    <Item3 Name="Magnetism Amperes" Prompt="" Scale="0.1" Base="0" Order="3"/>
+    <Item4 Name="Microamperes" Prompt="uA" Scale="1000000" Base="0" Order="3"/>
+    <Item5 Name="Milliamperes" Prompt="mA" Scale="1000" Base="0" Order="3"/>
+    <Item6 Name="Static Amperes" Prompt="sA" Scale="2998000000" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Electric Field Intensity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Static Electric Field Intensity" Prompt="" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Kilovolts per Meter" Prompt="kV/m" Scale="29.9792" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Electric Induction" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Henrys" Prompt="H" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Henrys" Prompt="Hint" Scale="0.999510239982408" Base="0" Order="5"/>
+    <Item3 Name="Magnetism Henrys" Prompt="" Scale="1000000000" Base="0" Order="5"/>
+    <Item4 Name="Static Henrys" Prompt="sH" Scale="1.113E-12" Base="0" Order="5"/>
+    <Item5 Name="Terahenrys" Prompt="TH" Scale="1E-12" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Electric Risistance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Ohms" Prompt="¦¸" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Ohms" Prompt="¦¸int" Scale="0.999510239982408" Base="0" Order="5"/>
+    <Item3 Name="Magnetism Ohms" Prompt="" Scale="1000000000" Base="0" Order="5"/>
+    <Item4 Name="Static Ohms" Prompt="s¦¸" Scale="1.113E-12" Base="0" Order="5"/>
+    <Item5 Name="Teraohms" Prompt="T¦¸" Scale="1E-12" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Energy Density;Volume Energy Capacity " Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Joules per Cubic Meter" Prompt="J/m^3" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units per Cubic Foot" Prompt="Btu/ft^3" Scale="2.68392E-5" Base="0" Order="3"/>
+    <Item3 Name="Calories per Cubic Centimeter" Prompt="cal/cm^3" Scale="2.38846E-7" Base="0" Order="3"/>
+    <Item4 Name="Celsius Heat Units per Cubic Foot" Prompt="CHU/ft^3" Scale="1.49107E-5" Base="0" Order="3"/>
+    <Item5 Name="Gigajoules per Cubic Meter" Prompt="GJ/m^3" Scale="1E-9" Base="0" Order="3"/>
+    <Item6 Name="Joules per Cubic Centimeter" Prompt="J/cm^3" Scale="1E-6" Base="0" Order="3"/>
+    <Item7 Name="Kilocalories (15 C) per Cubic Meter" Prompt="kcal-15/m^3" Scale="0.00023892" Base="0" Order="3"/>
+    <Item8 Name="Kilocalories (Thermo-Chemical) per Cubic Meter" Prompt="kcal-th/m^3" Scale="0.000239006" Base="0" Order="3"/>
+    <Item9 Name="Kilocalories per Cubic Meter" Prompt="kcal/m^3" Scale="0.000238846" Base="0" Order="3"/>
+    <Item10 Name="Kilojoules per Cubic Meter" Prompt="kJ/m^3" Scale="0.001" Base="0" Order="3"/>
+    <Item11 Name="Megajoules per Cubic Meter" Prompt="MJ/m^3" Scale="1E-6" Base="0" Order="3"/>
+    <Item12 Name="Therm per UK Gallon" Prompt="therm/UK gal" Scale="4.3086E-11" Base="0" Order="3"/>
+    <Item13 Name="Thermie per Liter" Prompt="thermie/L" Scale="2.3892E-10" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Enthalpy;Reaction Heat;Potential Heat;Internal Energy" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Joules per Kilogram" Prompt="J/kg" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units per Pound" Prompt="Btu/lb" Scale="0.000429923" Base="0" Order="4"/>
+    <Item3 Name="British Thermal Units per Ton" Prompt="Btu/ton" Scale="0.963029" Base="0" Order="4"/>
+    <Item4 Name="British Thermal Units per US Ton" Prompt="Btu/US ton" Scale="0.859845" Base="0" Order="4"/>
+    <Item5 Name="Celsius Heat Units per Pound" Prompt="CHU/lb" Scale="0.000238846" Base="0" Order="4"/>
+    <Item6 Name="Celsius Heat Units per Ton" Prompt="CHU/ton" Scale="0.535014" Base="0" Order="4"/>
+    <Item7 Name="Celsius Heat Units per US Ton" Prompt="CHU/US ton" Scale="0.47769" Base="0" Order="4"/>
+    <Item8 Name="Ergs per Gram" Prompt="erg/g" Scale="10000" Base="0" Order="4"/>
+    <Item9 Name="Ergs per Kilogram" Prompt="erg/kg" Scale="10000000" Base="0" Order="4"/>
+    <Item10 Name="Foot Pound Forces per Pound" Prompt="ft.lbf/lb" Scale="0.334553" Base="0" Order="4"/>
+    <Item11 Name="Kilocalories (15 C) per Kilogram" Prompt="kcal-15/kg" Scale="0.00023892" Base="0" Order="4"/>
+    <Item12 Name="Kilocalories (15 C) per Ton" Prompt="kcal-15/t" Scale="0.23892" Base="0" Order="4"/>
+    <Item13 Name="Kilocalories (Thermo-Chemical) per Kilogram" Prompt="kcal-th/kg" Scale="0.000239006" Base="0" Order="4"/>
+    <Item14 Name="Kilocalories (Thermo-Chemical) per Ton" Prompt="kcal-th/t" Scale="0.239006" Base="0" Order="4"/>
+    <Item15 Name="Kilocalories per Kilogram" Prompt="kcal/kg" Scale="0.000238846" Base="0" Order="4"/>
+    <Item16 Name="Kilocalories per Ton" Prompt="kcal/t" Scale="0.238846" Base="0" Order="4"/>
+    <Item17 Name="Kilogram Force Meters per Kilogram" Prompt="kgf.m/kg" Scale="0.101972" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Force" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Newton force" Prompt="N" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Dynes" Prompt="dyn" Scale="100000" Base="0" Order="3"/>
+    <Item3 Name="Giganewtons" Prompt="GN" Scale="1E-9" Base="0" Order="3"/>
+    <Item4 Name="Grams Force" Prompt="gf" Scale="101.9716213" Base="0" Order="3"/>
+    <Item5 Name="Joules per Meter" Prompt="J/m" Scale="1" Base="0" Order="3"/>
+    <Item6 Name="Kilograms Force" Prompt="kgf" Scale="0.101971621" Base="0" Order="3"/>
+    <Item7 Name="Kilonewtons" Prompt="kN" Scale="0.001" Base="0" Order="3"/>
+    <Item8 Name="Kips" Prompt="kip" Scale="0.000224809" Base="0" Order="3"/>
+    <Item9 Name="Meganewtons" Prompt="MN" Scale="1E-6" Base="0" Order="3"/>
+    <Item10 Name="Millinewtons" Prompt="mN" Scale="1000" Base="0" Order="3"/>
+    <Item11 Name="Nanonewtons" Prompt="nN" Scale="1000000000" Base="0" Order="3"/>
+    <Item12 Name="Ounces Force" Prompt="ozf" Scale="3.59694309" Base="0" Order="3"/>
+    <Item13 Name="Poundals" Prompt="pdl" Scale="7.233013851" Base="0" Order="3"/>
+    <Item14 Name="Pounds Force" Prompt="lbf" Scale="0.224808943" Base="0" Order="3"/>
+    <Item15 Name="Sn" Prompt="sn" Scale="0.001" Base="0" Order="3"/>
+    <Item16 Name="Tonnes Force" Prompt="tf" Scale="0.000101972" Base="0" Order="3"/>
+    <Item17 Name="Tons (UK) Force" Prompt="tonf" Scale="0.000100361" Base="0" Order="3"/>
+    <Item18 Name="Tons (US) Force" Prompt="US tonf" Scale="0.000112404" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Freight Distance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Ton Kilometer" Prompt="t.km" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Ton Mile" Prompt="ton.mile" Scale="0.611558" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Fuel Distance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilometers per Liter" Prompt="km/L" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="KPL" Prompt="KPL" Scale="1" Base="0" Order="4"/>
+    <Item3 Name="Liters per 100 Kilometer" Prompt="L/100km" Scale="100" Base="0" Order="4"/>
+    <Item4 Name="MPG (UK)" Prompt="MPG (UK)" Scale="2.824730511" Base="0" Order="4"/>
+    <Item5 Name="MPG (US)" Prompt="MPG (US)" Scale="2.352080106" Base="0" Order="4"/>
+    <Item6 Name="Miles per Gallon (UK)" Prompt="mile/UK gal" Scale="2.824730511" Base="0" Order="4"/>
+    <Item7 Name="Miles per Gallon (US)" Prompt="mile/US gal" Scale="2.352080106" Base="0" Order="4"/>
+    <Item8 Name="Miles per Liter" Prompt="mile/L" Scale="0.621371192" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Gas Comsuption" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Liters per Kilometer" Prompt="L/km" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Liters per Mile" Prompt="L/mile" Scale="1.609344498" Base="0" Order="5"/>
+    <Item3 Name="UK Gallons per Mile" Prompt="UK gal/mile" Scale="0.354006" Base="0" Order="5"/>
+    <Item4 Name="US Gallons per Mile" Prompt="US gal/mile" Scale="0.425144" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Heat Capacity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Joules per Kilogram Kelvin" Prompt="J/kg.K" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) per Pound Fahrenheit" Prompt="Btu/lb.F" Scale="0.000238846" Base="0" Order="4"/>
+    <Item3 Name="Celsius Heat Unit per Pound Celsius" Prompt="CHU/lb.C" Scale="0.000238846" Base="0" Order="4"/>
+    <Item4 Name="Egrs per Gram Kelvin" Prompt="egr/g.K" Scale="10000" Base="0" Order="4"/>
+    <Item5 Name="Feet Pounds per Pound Fahrenheit" Prompt="ft.lbf/lb.F" Scale="0.185863" Base="0" Order="4"/>
+    <Item6 Name="Joules per Gram Kelvin" Prompt="J/g.K" Scale="0.001" Base="0" Order="4"/>
+    <Item7 Name="Kilocalories (15C) per Kilogram Kelvin" Prompt="kcal-15/kg.K" Scale="0.00023892" Base="0" Order="4"/>
+    <Item8 Name="Kilocalories (TH) per Kilogram Kelvin" Prompt="kcal-th/kg.K" Scale="0.000239006" Base="0" Order="4"/>
+    <Item9 Name="Kilocalories per Kilogram Kelvin" Prompt="kcal/kg.K" Scale="0.000238846" Base="0" Order="4"/>
+    <Item10 Name="Kilogram Meters per Kilogram Kelvin" Prompt="kgf.m/kg.K" Scale="0.101972" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Heat Capacity of Volume" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Joules per Cubic Meter Kelvin" Prompt="J/m^3.K" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) per Cubic Foot Fahrenheit" Prompt="Btu/ft^3.F" Scale="1.49107E-5" Base="0" Order="4"/>
+    <Item3 Name="Calories per Cubic Centimeter Kelvin" Prompt="cal/cm^3.K" Scale="2.38846E-7" Base="0" Order="4"/>
+    <Item4 Name="Celsius Heat Unit per Cubic Foot Fahrenheit" Prompt="CHU/ft^3.F" Scale="8.28372E-6" Base="0" Order="4"/>
+    <Item5 Name="Joules per Cubic Centimeter Kelvin" Prompt="J/cm^3.K" Scale="1E-6" Base="0" Order="4"/>
+    <Item6 Name="Kilocalories (15C) per Cubic Meter Kelvin" Prompt="kcal-15/m^3.K" Scale="0.00023892" Base="0" Order="4"/>
+    <Item7 Name="Kilocalories (TH) per Cubic Meter Kelvin" Prompt="kcal-th/m^3.K" Scale="0.000239006" Base="0" Order="4"/>
+    <Item8 Name="Kilocalories per Cubic Meter Kelvin" Prompt="kcal/m^3.K" Scale="0.000238846" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Heat Conduct Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Watts per Meter Kelvin" Prompt="W/m.K" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) Inch per Sq Foot Hour Fahrenheit" Prompt="Btu.in/ft^2.h.F" Scale="6.93347" Base="0" Order="4"/>
+    <Item3 Name="British Thermal Units (IT) per Foot Hour Fahrenheit" Prompt="Btu/ft.h.F" Scale="0.577789" Base="0" Order="4"/>
+    <Item4 Name="British Thermal Units (IT) per Inch Hour Fahrenheit" Prompt="Btu/in.h.F" Scale="0.0481491" Base="0" Order="4"/>
+    <Item5 Name="Calories per Centimeter Second Kelvin" Prompt="cal/cm.s.K" Scale="0.00238846" Base="0" Order="4"/>
+    <Item6 Name="Celsius Heat Unit per Inch Hour Fahrenheit" Prompt="CHU/in.h.F" Scale="0.0267495" Base="0" Order="4"/>
+    <Item7 Name="Kilocalories per Meter Hour Kelvin" Prompt="kcal/m.h.K" Scale="0.859845" Base="0" Order="4"/>
+    <Item8 Name="Kilowatts per Meter Kelvin" Prompt="kW/m.K" Scale="0.001" Base="0" Order="4"/>
+    <Item9 Name="Watts per Centimeter Kelvin" Prompt="W/cm.K" Scale="0.01" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Heat Flow Density" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Watts per Sq Meter" Prompt="W/m^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) per Sq Foot Hour" Prompt="Btu/ft^2.h" Scale="0.316998" Base="0" Order="2"/>
+    <Item3 Name="Calories (15C) per Sq Centimeter Second" Prompt="cal-15/cm^2.s" Scale="2.3892E-5" Base="0" Order="2"/>
+    <Item4 Name="Calories (TH) per Sq Centimeter Second" Prompt="cal-th/cm^2.s" Scale="2.39006E-5" Base="0" Order="2"/>
+    <Item5 Name="Calories per Sq Centimeter Second" Prompt="cal/cm^2.s" Scale="2.38846E-5" Base="0" Order="2"/>
+    <Item6 Name="Calories per Sq Meter Hour" Prompt="cal/m^2.h" Scale="0.859845" Base="0" Order="2"/>
+    <Item7 Name="Kilowatts per Sq Inch" Prompt="kW/in^2" Scale="6.4516E-7" Base="0" Order="2"/>
+    <Item8 Name="Kilowatts per Sq Meter" Prompt="kW/m^2" Scale="0.001" Base="0" Order="2"/>
+    <Item9 Name="Watts per Sq Centimeter" Prompt="W/cm^2" Scale="0.0001" Base="0" Order="2"/>
+    <Item10 Name="Watts per Sq Inch" Prompt="W/in^2" Scale="0.00064516" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Heat Resistant Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Meter Kelvin per Watt" Prompt="m.K/W" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Centimeter Kelvin per Watt" Prompt="cm.K/W" Scale="100" Base="0" Order="3"/>
+    <Item3 Name="Centimeter Second Kelvin per Calory" Prompt="cm.s.K/cal" Scale="418.68" Base="0" Order="3"/>
+    <Item4 Name="Foot Hour Fahrenheit per British Thermal Unit (IT)" Prompt="ft.h.F/Btu" Scale="1.73073" Base="0" Order="3"/>
+    <Item5 Name="Inch Hour Fahrenheit per British Thermal Unit (IT)" Prompt="in.h.F/Btu" Scale="20.7688" Base="0" Order="3"/>
+    <Item6 Name="Inch Hour Fahrenheit per Celsius Heat Unit" Prompt="in.h.F/CHU" Scale="37.3839" Base="0" Order="3"/>
+    <Item7 Name="Meter Hour Kelvin per Kilocalory" Prompt="m.h.K/kcal" Scale="1.163" Base="0" Order="3"/>
+    <Item8 Name="Meter Kelvin per Kilowatt " Prompt="m.K/kW" Scale="1000" Base="0" Order="3"/>
+    <Item9 Name="Sq Foot Hour Fahrenheit per British Thermal Unit (IT) Inch" Prompt="ft^2.h.F/Btu.in" Scale="0.144228" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Heat Transfer Coefficiency" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Watts per Sq Meter Kelvin" Prompt="W/m^2.K" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) per Sq Foot Hour Fahrenheit" Prompt="Btu/ft^2.h.F" Scale="0.17611" Base="0" Order="5"/>
+    <Item3 Name="Calories per Sq Centimeter Second Kelvin" Prompt="cal/cm^2.s.K" Scale="2.38846E-5" Base="0" Order="5"/>
+    <Item4 Name="Celsius Heat Unit per Sq ft Hour Fahrenheit" Prompt="CHU/ft^2.h.F" Scale="0.0978386" Base="0" Order="5"/>
+    <Item5 Name="Ergs per Sq Centimeter Second Kelvin" Prompt="erg/cm^2.s.K" Scale="1000" Base="0" Order="5"/>
+    <Item6 Name="Kilocalories per Sq Meter Hour Kelvin" Prompt="kcal/m^2.h.K" Scale="0.859845" Base="0" Order="5"/>
+    <Item7 Name="Watts per Sq Centimeter Kelvin" Prompt="W/cm^2.K" Scale="0.0001" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Heat;Power;Energy" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Joule" Prompt="J" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (Thermo-Chemical)" Prompt="Btu-th" Scale="0.000948452" Base="0" Order="7"/>
+    <Item3 Name="Calories (IT)" Prompt="cal" Scale="0.238845897" Base="0" Order="7"/>
+    <Item4 Name="British Thermal Units (15C)" Prompt="Btu-15" Scale="0.00094811" Base="0" Order="0"/>
+    <Item5 Name="British Thermal Units (IT)" Prompt="Btu" Scale="0.000947817" Base="0" Order="0"/>
+    <Item6 Name="British Thermal Units (Mean)" Prompt="Btu-mn" Scale="0.000947086" Base="0" Order="0"/>
+    <Item7 Name="Calories (15 C)" Prompt="cal-15" Scale="0.238902958" Base="0" Order="0"/>
+    <Item8 Name="Calories (20 C)" Prompt="cal-20" Scale="0.239125756" Base="0" Order="0"/>
+    <Item9 Name="Calories (Mean)" Prompt="cal-mn" Scale="0.238662345" Base="0" Order="0"/>
+    <Item10 Name="Calories (Thermo-Chemical)" Prompt="cal-th" Scale="0.239005736" Base="0" Order="0"/>
+    <Item11 Name="Celsius Heat Unit" Prompt="CHU" Scale="0.000526565" Base="0" Order="0"/>
+    <Item12 Name="Cubic Centimeter Atomospheres" Prompt="cm^3.atm" Scale="9.86923" Base="0" Order="0"/>
+    <Item13 Name="Cubic Feet Atomospheres" Prompt="ft^3.atm" Scale="0.000348529" Base="0" Order="0"/>
+    <Item14 Name="Cubic Meter Atomospheres" Prompt="m^3.atm" Scale="9.86923E-6" Base="0" Order="0"/>
+    <Item15 Name="Electron Volts" Prompt="eV" Scale="6.24196E18" Base="0" Order="0"/>
+    <Item16 Name="Ergs" Prompt="erg" Scale="10000000" Base="0" Order="0"/>
+    <Item17 Name="Foot-Poundals" Prompt="ft.pdl" Scale="23.7304224" Base="0" Order="0"/>
+    <Item18 Name="Foot-Pounds" Prompt="ft.lbf" Scale="0.737571913" Base="0" Order="0"/>
+    <Item19 Name="Giga-Electron Volts" Prompt="GeV" Scale="6241963472" Base="0" Order="0"/>
+    <Item20 Name="Gigajoules" Prompt="GJ" Scale="1E-9" Base="0" Order="0"/>
+    <Item21 Name="Horsepower Hours" Prompt="hp.h" Scale="3.72506E-7" Base="0" Order="0"/>
+    <Item22 Name="Horsepower Hours(Electricity)" Prompt="hp.h(El)" Scale="3.72506E-7" Base="0" Order="0"/>
+    <Item23 Name="Horsepower Minutes" Prompt="hp.min" Scale="2.23504E-5" Base="0" Order="0"/>
+    <Item24 Name="Horsepower Seconds" Prompt="hp.s" Scale="0.001341022" Base="0" Order="0"/>
+    <Item25 Name="Housepower Hours(SI)" Prompt="hp.h(SI)" Scale="3.77672E-7" Base="0" Order="0"/>
+    <Item26 Name="Kilo-Electron Volts" Prompt="keV" Scale="6.24196E15" Base="0" Order="0"/>
+    <Item27 Name="Kilocalories (15 C)" Prompt="kcal-15" Scale="0.000238903" Base="0" Order="0"/>
+    <Item28 Name="Kilocalories (20 C)" Prompt="kcal-20" Scale="0.000239126" Base="0" Order="0"/>
+    <Item29 Name="Kilocalories (IT)" Prompt="kcal" Scale="0.000238846" Base="0" Order="0"/>
+    <Item30 Name="Kilocalories (Mean)" Prompt="kcal-mn" Scale="0.000238662" Base="0" Order="0"/>
+    <Item31 Name="Kilocalories (Thermo-Chemical)" Prompt="kcal-th" Scale="0.000239006" Base="0" Order="0"/>
+    <Item32 Name="Kilogram Meters" Prompt="kgf.m" Scale="0.101971621" Base="0" Order="0"/>
+    <Item33 Name="Kilojoules" Prompt="kJ" Scale="0.001" Base="0" Order="0"/>
+    <Item34 Name="Kilowatt Hours" Prompt="kW.h" Scale="2.77778E-7" Base="0" Order="0"/>
+    <Item35 Name="Kilowatt Minutes" Prompt="kW.min" Scale="1.66667E-5" Base="0" Order="0"/>
+    <Item36 Name="Kilowatt Seconds" Prompt="kW.s" Scale="0.001" Base="0" Order="0"/>
+    <Item37 Name="Liter Atmosphere" Prompt="L.atm" Scale="0.0098692" Base="0" Order="0"/>
+    <Item38 Name="Mega-Electron Volts" Prompt="MeV" Scale="6241960000000" Base="0" Order="0"/>
+    <Item39 Name="Megajoules" Prompt="MJ" Scale="1E-6" Base="0" Order="0"/>
+    <Item40 Name="Milijoules" Prompt="mJ" Scale="1000" Base="0" Order="0"/>
+    <Item41 Name="Newton Meters" Prompt="N.m" Scale="1" Base="0" Order="0"/>
+    <Item42 Name="Thermies" Prompt="Thermy" Scale="2.38949E-7" Base="0" Order="0"/>
+    <Item43 Name="Therms (IT)" Prompt="Therm" Scale="9.47817E-9" Base="0" Order="0"/>
+    <Item44 Name="Therms (Mean)" Prompt="Therm-mn" Scale="9.47086E-9" Base="0" Order="0"/>
+    <Item45 Name="Therms (Thermo-Chemical)" Prompt="Therm-th" Scale="9.48452E-9" Base="0" Order="0"/>
+    <Item46 Name="UK ton of TNT" Prompt="ton(TNT)" Scale="2.39006E-10" Base="0" Order="0"/>
+    <Item47 Name="Watt Hours" Prompt="W.h" Scale="0.000277778" Base="0" Order="0"/>
+    <Item48 Name="Watt Minutes" Prompt="W.min" Scale="0.016666667" Base="0" Order="0"/>
+    <Item49 Name="Watt Seconds" Prompt="W.s" Scale="1" Base="0" Order="0"/>
+  </Unit>
+  <Unit Name="Illumination" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Foot-Candles" Prompt="footcandle" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Lumens per Sq Foot" Prompt="lm/ft2" Scale="1" Base="0" Order="4"/>
+    <Item3 Name="Lumens per Sq Meter" Prompt="lm/m^2" Scale="10.76391042" Base="0" Order="4"/>
+    <Item4 Name="Lux" Prompt="lx" Scale="10.76391042" Base="0" Order="4"/>
+    <Item5 Name="Meter-Candles" Prompt="metercandle" Scale="10.76391042" Base="0" Order="4"/>
+    <Item6 Name="MilliPhots" Prompt="mphot" Scale="1.076391042" Base="0" Order="4"/>
+    <Item7 Name="Noon-Day Sun Brightness" Prompt="Noon-Day Sun Brightness" Scale="0.0001" Base="0" Order="4"/>
+    <Item8 Name="Nox" Prompt="nox" Scale="10763.91042" Base="0" Order="4"/>
+    <Item9 Name="Phots" Prompt="phot" Scale="0.001076391" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Kinematic Viscosity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Square Meters per Second" Prompt="m^2/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Centistrokes" Prompt="cSt" Scale="1000000" Base="0" Order="8"/>
+    <Item3 Name="Square Feet per Hour" Prompt="ft^2/h" Scale="38750.1" Base="0" Order="4"/>
+    <Item4 Name="Square Feet per Second" Prompt="ft^2/s" Scale="10.7639" Base="0" Order="4"/>
+    <Item5 Name="Square Inches per Hour" Prompt="in^2/h" Scale="5580010" Base="0" Order="4"/>
+    <Item6 Name="Square Inches per Second" Prompt="in^2/s" Scale="1550" Base="0" Order="4"/>
+    <Item7 Name="Square Meters per Hour" Prompt="m^2/h" Scale="3600" Base="0" Order="4"/>
+    <Item8 Name="Square Yards per Second" Prompt="yd^2/s" Scale="1.19599" Base="0" Order="4"/>
+    <Item9 Name="Strokes" Prompt="St" Scale="10000" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Linear Dengsity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilograms per Meter" Prompt="kg/m" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Grams per Centimenter" Prompt="g/cm" Scale="10" Base="0" Order="5"/>
+    <Item3 Name="Pound per Mile" Prompt="lb/mile" Scale="3548" Base="0" Order="5"/>
+    <Item4 Name="Pounds per Foot" Prompt="lb/ft" Scale="0.671969" Base="0" Order="5"/>
+    <Item5 Name="Pounds per Inch" Prompt="lb/in" Scale="0.0559974" Base="0" Order="5"/>
+    <Item6 Name="Pounds per Yard" Prompt="lb/yd" Scale="2.01591" Base="0" Order="5"/>
+    <Item7 Name="Tons per Mile" Prompt="ton/mile" Scale="1.58393" Base="0" Order="5"/>
+    <Item8 Name="Tons per Yard" Prompt="ton/yd" Scale="0.000899958" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Luminance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Candela per Sq Centimeter" Prompt="cd/cm^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Apostilbs" Prompt="asb" Scale="31415.92654" Base="0" Order="5"/>
+    <Item3 Name="Candela per SQ Inch" Prompt="cd/in^2" Scale="6.452" Base="0" Order="5"/>
+    <Item4 Name="Candela per Sq Foot" Prompt="cd/ft^2" Scale="929.0304" Base="0" Order="5"/>
+    <Item5 Name="Candela per Sq Meter" Prompt="cd/m^2" Scale="10000" Base="0" Order="5"/>
+    <Item6 Name="Foot-Lamberts" Prompt="ft.la" Scale="2918.63508" Base="0" Order="5"/>
+    <Item7 Name="Lamberts" Prompt="la" Scale="3.141592654" Base="0" Order="5"/>
+    <Item8 Name="Millilamberts" Prompt="mla" Scale="3141.592654" Base="0" Order="5"/>
+    <Item9 Name="Nits" Prompt="nt" Scale="10000" Base="0" Order="5"/>
+    <Item10 Name="Skots" Prompt="sk" Scale="31415926.54" Base="0" Order="5"/>
+    <Item11 Name="Stilbs" Prompt="stilb" Scale="100000000" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Luminous Flux" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Lumens" Prompt="lm" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Candela Steradians" Prompt="cd.sr" Scale="1" Base="0" Order="5"/>
+    <Item3 Name="Candle Power (Spherical)" Prompt="Candle Power" Scale="0.079577472" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Luminous Intensity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Candela" Prompt="cd" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Candles (International)" Prompt="Candle (SI)" Scale="0.980998067" Base="0" Order="5"/>
+    <Item3 Name="Hefner Units" Prompt="Hefner" Scale="1.107419712" Base="0" Order="5"/>
+    <Item4 Name="Lumens per Steradian" Prompt="lm/sr" Scale="1" Base="0" Order="5"/>
+    <Item5 Name="Violle" Prompt="Violle" Scale="0.049019608" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Magnetic Flux" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Webers" Prompt="Wb" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Webers" Prompt="Wbint" Scale="0.999660115560709" Base="0" Order="3"/>
+    <Item3 Name="Maxwells" Prompt="Mx" Scale="100000000" Base="0" Order="3"/>
+    <Item4 Name="Nanowebers" Prompt="nWb" Scale="1000000000" Base="0" Order="3"/>
+    <Item5 Name="Static Magnetic Flux Units" Prompt="" Scale="0.00333564604792656" Base="0" Order="3"/>
+    <Item6 Name="unit pole" Prompt="unit pole" Scale="7957728.54596384" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Magnetic Induction" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Gausses" Prompt="Gs" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Maxwells per Sq Centimeter" Prompt="Mx/cm^2" Scale="1" Base="0" Order="8"/>
+    <Item3 Name="r" Prompt="r" Scale="100000" Base="0" Order="8"/>
+    <Item4 Name="Static Magnetic Induction" Prompt="" Scale="3.33566830114413E-11" Base="0" Order="3"/>
+    <Item5 Name="T" Prompt="T" Scale="0.0001" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Magnetic Intensity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Oe" Prompt="Oe" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Ampere-turns per Centimeter" Prompt="A/cm" Scale="0.7958" Base="0" Order="5"/>
+    <Item3 Name="Ampere-turns per Meter" Prompt="A/m" Scale="79.58" Base="0" Order="5"/>
+    <Item4 Name="Static Magnetic Intensity Units" Prompt="" Scale="29980409885.4732" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Magnetomotive Force " Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Ampere-turns" Prompt="A" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Gilbert" Prompt="Gb" Scale="1.257" Base="0" Order="4"/>
+    <Item3 Name="Magnetism Ampere-turns" Prompt="" Scale="0.1" Base="0" Order="4"/>
+    <Item4 Name="Picoampere-turns" Prompt="pA" Scale="1000000000000" Base="0" Order="4"/>
+    <Item5 Name="Static Magnetomotive Force Units" Prompt="" Scale="37673297166.9681" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Mass" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilograms" Prompt="kg" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Carats" Prompt="car" Scale="5000" Base="0" Order="9"/>
+    <Item3 Name="Drams" Prompt="dr" Scale="564.3833912" Base="0" Order="9"/>
+    <Item4 Name="Grams" Prompt="g" Scale="1000" Base="0" Order="9"/>
+    <Item5 Name="Pounds" Prompt="lb" Scale="2.204622622" Base="0" Order="9"/>
+    <Item6 Name="Grains" Prompt="gr" Scale="15432.35835" Base="0" Order="7"/>
+    <Item7 Name="100 Pounds" Prompt="ctl" Scale="0.02204622622" Base="0" Order="3"/>
+    <Item8 Name="Grains (Metric)" Prompt="gn" Scale="20000" Base="0" Order="3"/>
+    <Item9 Name="Hundred Weights" Prompt="cwt" Scale="0.019684131" Base="0" Order="3"/>
+    <Item10 Name="Hundred Weights (Short)" Prompt="sh cwt" Scale="0.022046226" Base="0" Order="3"/>
+    <Item11 Name="Livre" Prompt="Livre" Scale="2.042900919" Base="0" Order="3"/>
+    <Item12 Name="Megagrams" Prompt="Mg" Scale="0.001" Base="0" Order="3"/>
+    <Item13 Name="Micrograms" Prompt="Microgram" Scale="1000000000" Base="0" Order="3"/>
+    <Item14 Name="Milligrams" Prompt="Milligram" Scale="1000000" Base="0" Order="3"/>
+    <Item15 Name="Nanograms" Prompt="Nanogram" Scale="1000000000000" Base="0" Order="3"/>
+    <Item16 Name="Ounces" Prompt="oz" Scale="35.27396195" Base="0" Order="3"/>
+    <Item17 Name="Ounces (Troy)" Prompt="oz tr" Scale="32.15074657" Base="0" Order="3"/>
+    <Item18 Name="Pennyweights" Prompt="dwt" Scale="643.0149314" Base="0" Order="3"/>
+    <Item19 Name="Pfund" Prompt="Pfund" Scale="2" Base="0" Order="3"/>
+    <Item20 Name="Picograms" Prompt="Picogram" Scale="1E15" Base="0" Order="3"/>
+    <Item21 Name="Pounds (Troy)" Prompt="lb tr" Scale="2.679228881" Base="0" Order="3"/>
+    <Item22 Name="Quarters" Prompt="qtr" Scale="0.078736522" Base="0" Order="3"/>
+    <Item23 Name="Roman Ounces (unciae)" Prompt="unciae" Scale="35.27396195" Base="0" Order="3"/>
+    <Item24 Name="Roman Pounds (librae)" Prompt="librae" Scale="2.939496829" Base="0" Order="3"/>
+    <Item25 Name="Scruples" Prompt="scruple" Scale="771.6179176" Base="0" Order="3"/>
+    <Item26 Name="Slugs" Prompt="slug" Scale="0.068521763" Base="0" Order="3"/>
+    <Item27 Name="Stones" Prompt="stone" Scale="0.157473044" Base="0" Order="3"/>
+    <Item28 Name="Tonnes" Prompt="tonne" Scale="0.001" Base="0" Order="3"/>
+    <Item29 Name="Tons" Prompt="ton " Scale="0.000984207" Base="0" Order="3"/>
+    <Item30 Name="Tons (Short)" Prompt="US ton" Scale="0.001102311" Base="0" Order="3"/>
+    <Item31 Name="Zentners" Prompt="zentner" Scale="0.02" Base="0" Order="3"/>
+    <Item32 Name="metric cwt" Prompt="q" Scale="0.01" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Mass Flow Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilograms per Second" Prompt="kg/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="10^4Megagram/Year" Prompt="10^4Mg/a" Scale="3.1536" Base="0" Order="3"/>
+    <Item3 Name="Grams per Hour" Prompt="g/h" Scale="3600000" Base="0" Order="3"/>
+    <Item4 Name="Grams per Minute" Prompt="g/min" Scale="60000" Base="0" Order="3"/>
+    <Item5 Name="Grams per Second" Prompt="g/s" Scale="1000" Base="0" Order="3"/>
+    <Item6 Name="Kilogram/Day" Prompt="kg/d" Scale="86400" Base="0" Order="3"/>
+    <Item7 Name="Kilogram/Hour" Prompt="kg/h" Scale="3600" Base="0" Order="3"/>
+    <Item8 Name="Kilograms per Hour" Prompt="kg/h" Scale="3600" Base="0" Order="3"/>
+    <Item9 Name="Kilograms per Minute" Prompt="kg/min" Scale="60" Base="0" Order="3"/>
+    <Item10 Name="Megagram/Year(365)" Prompt="Mg/a" Scale="31536" Base="0" Order="3"/>
+    <Item11 Name="Ounces per Hour" Prompt="oz/h" Scale="126986.263" Base="0" Order="3"/>
+    <Item12 Name="Ounces per Minute" Prompt="oz/min" Scale="2116.437717" Base="0" Order="3"/>
+    <Item13 Name="Ounces per Second" Prompt="oz/s" Scale="35.27396195" Base="0" Order="3"/>
+    <Item14 Name="Pound/Day" Prompt="lb/d" Scale="190479" Base="0" Order="3"/>
+    <Item15 Name="Pound/Hour" Prompt="lb/h" Scale="7936.64" Base="0" Order="3"/>
+    <Item16 Name="Pound/Second" Prompt="lb/s" Scale="2.20462" Base="0" Order="3"/>
+    <Item17 Name="Pounds per Hour" Prompt="lb/h" Scale="7936.641439" Base="0" Order="3"/>
+    <Item18 Name="Pounds per Minute" Prompt="lb/min" Scale="132.2773573" Base="0" Order="3"/>
+    <Item19 Name="Pounds per Second" Prompt="lb/s" Scale="2.204622622" Base="0" Order="3"/>
+    <Item20 Name="Short TOn/Day" Prompt="sh ton/d" Scale="95.2381" Base="0" Order="3"/>
+    <Item21 Name="Short TOn/Hour" Prompt="sh ton/h" Scale="3.96825" Base="0" Order="3"/>
+    <Item22 Name="Slugs per Hour" Prompt="slug/h" Scale="246.678346" Base="0" Order="3"/>
+    <Item23 Name="Slugs per Minute" Prompt="slug/min" Scale="4.111305767" Base="0" Order="3"/>
+    <Item24 Name="Slugs per Second" Prompt="slug/s" Scale="0.068521763" Base="0" Order="3"/>
+    <Item25 Name="UK Ton/Day" Prompt="UK ton/d" Scale="85.0354" Base="0" Order="3"/>
+    <Item26 Name="UK Ton/Hour" Prompt="UK ton/h" Scale="3.54314" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Moment Momentum;Angular Momentum" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilogram Sq Meters per Second" Prompt="kg.m^2/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Ounce Sq Inches per Second" Prompt="oz.in^2/s" Scale="54674.8" Base="0" Order="5"/>
+    <Item3 Name="Pound Sq Feet per Second" Prompt="lb.ft^2/s" Scale="23.7304" Base="0" Order="5"/>
+    <Item4 Name="Pound Sq Inches per Second" Prompt="lb.in^2/s" Scale="3417.17" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Moment of Inertia " Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilogram Sq Meters" Prompt="kg.m^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Ounce Sq Inches" Prompt="oz.in^2" Scale="54674.8" Base="0" Order="8"/>
+    <Item3 Name="Gram Sq Centimeters" Prompt="g.cm^2" Scale="10000000" Base="0" Order="4"/>
+    <Item4 Name="Pound Sq Feet" Prompt="lb.ft^2" Scale="23.7304" Base="0" Order="4"/>
+    <Item5 Name="Pound Sq Inches" Prompt="lb.in^2" Scale="3417.17" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Momentum" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilogram Meters per Second" Prompt="kg.m/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Gram Centimeters per Second" Prompt="g.cm/s" Scale="100000" Base="0" Order="4"/>
+    <Item3 Name="Ounce Inches per Second" Prompt="oz.in/s" Scale="1388.74" Base="0" Order="4"/>
+    <Item4 Name="Pound Feet per Second" Prompt="lb.ft/s" Scale="7.23301" Base="0" Order="4"/>
+    <Item5 Name="Pound Inches per Second" Prompt="lb.in/s" Scale="86.7962" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Oil Comsuption of Freight Distance" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Ton Kilometer per Liter" Prompt="t.km/L" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Ton Mile per UK Gallon" Prompt="ton.mile/UK gal" Scale="2.7802" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Power Rate Capacity;Heat Flow Rate Capacity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Watts per Cubic Meter" Prompt="W/m^3" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units per Cubic Foot Hour" Prompt="Btu/ft^3.h" Scale="0.0966211" Base="0" Order="3"/>
+    <Item3 Name="British Thermal Units per Cubic Inch Second" Prompt="Btu/in^3.s" Scale="1.55319E-8" Base="0" Order="3"/>
+    <Item4 Name="Calories per Cubic Centimeter Second" Prompt="cal/cm^3.s" Scale="2.38846E-7" Base="0" Order="3"/>
+    <Item5 Name="Kiolcalories per Cubic Meter Hour" Prompt="kcal/m^3.h" Scale="0.859845" Base="0" Order="3"/>
+    <Item6 Name="Megawatts per Cubic Meter" Prompt="MW/m^3" Scale="1E-6" Base="0" Order="3"/>
+    <Item7 Name="Watts per Cubic Centimeter" Prompt="W/cm^3" Scale="1E-6" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Power Rate;Heat Flow Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Watts" Prompt="W" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="British Thermal Units (IT) per Hour" Prompt="Btu/h" Scale="3.41214" Base="0" Order="5"/>
+    <Item3 Name="British Thermal Units (IT) per Minite" Prompt="Btu/min" Scale="0.056869" Base="0" Order="5"/>
+    <Item4 Name="British Thermal Units (Th) per Hour" Prompt="Btu-th/h" Scale="3.41442595" Base="0" Order="5"/>
+    <Item5 Name="Calories (IT) per Hour" Prompt="cal/h" Scale="859.8452279" Base="0" Order="5"/>
+    <Item6 Name="Calories (IT) per Minute" Prompt="cal/min" Scale="14.3307538" Base="0" Order="5"/>
+    <Item7 Name="Calories (IT) per Second" Prompt="cal/s" Scale="0.238845897" Base="0" Order="5"/>
+    <Item8 Name="Calories (Th) per Hour" Prompt="cal-th/h" Scale="860.4206501" Base="0" Order="5"/>
+    <Item9 Name="Calories (Th) per Minute" Prompt="cal-th/min" Scale="14.34034417" Base="0" Order="5"/>
+    <Item10 Name="Calories (Th) per Second" Prompt="cal-th/s" Scale="0.239005736" Base="0" Order="5"/>
+    <Item11 Name="Celsius Heat Unit per Hour" Prompt="CHU/h" Scale="1.89563" Base="0" Order="5"/>
+    <Item12 Name="Ergs per Second" Prompt="erg/s" Scale="10000000" Base="0" Order="5"/>
+    <Item13 Name="Foot-Pounds per Minite" Prompt="ft.lbf/min" Scale="44.2543148" Base="0" Order="5"/>
+    <Item14 Name="Foot-Pounds per Second" Prompt="ft.lbf/s" Scale="0.737571913" Base="0" Order="5"/>
+    <Item15 Name="Gigawatts" Prompt="GW" Scale="1E-9" Base="0" Order="5"/>
+    <Item16 Name="Gram Centimeters per Minite" Prompt="gf.cm/min" Scale="169.9527022" Base="0" Order="5"/>
+    <Item17 Name="HorsePower, Metric" Prompt="hp-SI" Scale="0.001359622" Base="0" Order="5"/>
+    <Item18 Name="Horsepowers (UK)" Prompt="hp" Scale="0.001341022" Base="0" Order="5"/>
+    <Item19 Name="Joules per Hour" Prompt="J/h" Scale="3600" Base="0" Order="5"/>
+    <Item20 Name="Joules per Minute" Prompt="J/min" Scale="60" Base="0" Order="5"/>
+    <Item21 Name="Joules per Second" Prompt="J/s" Scale="1" Base="0" Order="5"/>
+    <Item22 Name="Kilocalories (IT) per Hour" Prompt="kcal/h" Scale="0.859845228" Base="0" Order="5"/>
+    <Item23 Name="Kilocalories (IT) per Minute" Prompt="kcal/min" Scale="0.014330754" Base="0" Order="5"/>
+    <Item24 Name="Kilocalories (IT) per Second" Prompt="kcal/s" Scale="0.000238846" Base="0" Order="5"/>
+    <Item25 Name="Kilocalories (Th) per Hour" Prompt="kcal-th/h" Scale="0.86042065" Base="0" Order="5"/>
+    <Item26 Name="Kilocalories (Th) per Minute" Prompt="kcal-th/min" Scale="0.014340344" Base="0" Order="5"/>
+    <Item27 Name="Kilocalories (Th) per Second" Prompt="kcal-th/s" Scale="0.000239006" Base="0" Order="5"/>
+    <Item28 Name="Kilogram Force Meters per Hour" Prompt="kgf.m/h" Scale="367.099" Base="0" Order="5"/>
+    <Item29 Name="Kilogram Force Meters per Second" Prompt="kgf.m/s" Scale="0.101971621" Base="0" Order="5"/>
+    <Item30 Name="Kilowatts" Prompt="kW" Scale="0.001" Base="0" Order="5"/>
+    <Item31 Name="Liter Atmospheres (Engin) per Second" Prompt="L.at/s" Scale="0.010197162" Base="0" Order="5"/>
+    <Item32 Name="Liter Atmospheres per Second" Prompt="L.atm/s" Scale="0.009869233" Base="0" Order="5"/>
+    <Item33 Name="Megawatts" Prompt="MW" Scale="1E-6" Base="0" Order="5"/>
+    <Item34 Name="Torrs Liters per Second" Prompt="torr.L/s" Scale="7.500750075" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Prefix" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Value" Prompt="" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="centi" Prompt="c" Scale="100" Base="0" Order="8"/>
+    <Item3 Name="micro" Prompt="u" Scale="1000000" Base="0" Order="6"/>
+    <Item4 Name="milli" Prompt="m" Scale="1000" Base="0" Order="5"/>
+    <Item5 Name="atto" Prompt="a" Scale="1E18" Base="0" Order="1"/>
+    <Item6 Name="deci" Prompt="d" Scale="10" Base="0" Order="1"/>
+    <Item7 Name="deka/deca" Prompt="da" Scale="0.1" Base="0" Order="1"/>
+    <Item8 Name="exa" Prompt="E" Scale="1E-18" Base="0" Order="1"/>
+    <Item9 Name="femto" Prompt="f" Scale="1E15" Base="0" Order="1"/>
+    <Item10 Name="giga" Prompt="G" Scale="1E-9" Base="0" Order="1"/>
+    <Item11 Name="hecto" Prompt="h" Scale="0.01" Base="0" Order="1"/>
+    <Item12 Name="kilo" Prompt="k" Scale="0.001" Base="0" Order="1"/>
+    <Item13 Name="mega" Prompt="M" Scale="1E-6" Base="0" Order="1"/>
+    <Item14 Name="nano" Prompt="n" Scale="1000000000" Base="0" Order="1"/>
+    <Item15 Name="peta" Prompt="P" Scale="1E-15" Base="0" Order="1"/>
+    <Item16 Name="pico" Prompt="p" Scale="1000000000000" Base="0" Order="1"/>
+    <Item17 Name="tera" Prompt="T" Scale="1E-12" Base="0" Order="1"/>
+    <Item18 Name="yocto" Prompt="y" Scale="1E24" Base="0" Order="1"/>
+    <Item19 Name="yotta" Prompt="Y" Scale="1E-24" Base="0" Order="1"/>
+    <Item20 Name="zepto" Prompt="z" Scale="1E21" Base="0" Order="1"/>
+    <Item21 Name="zetta" Prompt="Z" Scale="1E-21" Base="0" Order="1"/>
+  </Unit>
+  <Unit Name="Pressure;Weight per unit of area" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Pascals (N/m^2)" Prompt="Pa" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Megapascals (N/mm^2)" Prompt="MPa" Scale="1E-6" Base="0" Order="6"/>
+    <Item3 Name="Pounds per Sq Inch" Prompt="psi" Scale="0.000145038" Base="0" Order="6"/>
+    <Item4 Name="Atmospheres" Prompt="atm" Scale="9.86923E-6" Base="0" Order="1"/>
+    <Item5 Name="Atmospheres (Engineering)" Prompt="at" Scale="1.01972E-5" Base="0" Order="1"/>
+    <Item6 Name="Bars" Prompt="bar" Scale="1E-5" Base="0" Order="1"/>
+    <Item7 Name="Centimeters of Mercury at 0 C" Prompt="cmHg(0C)" Scale="0.000750062" Base="0" Order="1"/>
+    <Item8 Name="Centimeters of Water at 4 C" Prompt="cmH20(4C)" Scale="0.010197429" Base="0" Order="1"/>
+    <Item9 Name="Dynes per Sq Centimeter" Prompt="dyn/cm^2" Scale="10" Base="0" Order="1"/>
+    <Item10 Name="Dynes per Sq Meter" Prompt="dyn/m^2" Scale="100000" Base="0" Order="1"/>
+    <Item11 Name="Feet of Sea Water" Prompt="ftSeaH2O" Scale="0.000325923" Base="0" Order="1"/>
+    <Item12 Name="Feet of Water at 39.2F" Prompt="ftH2O(39.2F)" Scale="0.000334561" Base="0" Order="1"/>
+    <Item13 Name="Gigapascals" Prompt="GPa" Scale="1E-9" Base="0" Order="1"/>
+    <Item14 Name="Grams per Sq Centimeter" Prompt="g/cm^2" Scale="0.010197162" Base="0" Order="1"/>
+    <Item15 Name="Grams per Sq Meter" Prompt="g/m^2" Scale="101.9716213" Base="0" Order="1"/>
+    <Item16 Name="Hectobars" Prompt="hbar" Scale="1E-7" Base="0" Order="1"/>
+    <Item17 Name="Inches of Mercury at 0 C" Prompt="inHg(0C)" Scale="0.0002953" Base="0" Order="1"/>
+    <Item18 Name="Inches of Mercury at 32 F" Prompt="inHg(32F)" Scale="0.0002953" Base="0" Order="1"/>
+    <Item19 Name="Inches of Water at 39.2 F" Prompt="inH2O(39.2F)" Scale="0.004014736" Base="0" Order="1"/>
+    <Item20 Name="Kilograms per Sq Centimeter" Prompt="kgf/cm^2" Scale="1.01972E-5" Base="0" Order="1"/>
+    <Item21 Name="Kilograms per Sq Meter" Prompt="kgf/m^2" Scale="0.101971621" Base="0" Order="1"/>
+    <Item22 Name="Kilograms per Sq Millimeter" Prompt="kgf/mm^2" Scale="1.01972E-7" Base="0" Order="1"/>
+    <Item23 Name="Kilopascals" Prompt="kPa" Scale="0.001" Base="0" Order="1"/>
+    <Item24 Name="Meters of Sea Water" Prompt="mSeaH2O" Scale="9.93413E-5" Base="0" Order="1"/>
+    <Item25 Name="Meters of Water at 4 C" Prompt="mH2O(4C)" Scale="0.000101974" Base="0" Order="1"/>
+    <Item26 Name="Millibars" Prompt="mbar" Scale="0.01" Base="0" Order="1"/>
+    <Item27 Name="Millimeters of Mercury at 0 C" Prompt="mmHg(0C)" Scale="0.007500617" Base="0" Order="1"/>
+    <Item28 Name="Millimeters of Water at 4 C" Prompt="mmH2O(4C)" Scale="0.101974289" Base="0" Order="1"/>
+    <Item29 Name="Nanonewtons per Sq Micron" Prompt="nton/um^2" Scale="0.001" Base="0" Order="1"/>
+    <Item30 Name="Newtons per Sq Meter" Prompt="N/m^2" Scale="1" Base="0" Order="1"/>
+    <Item31 Name="PSI" Prompt="lb/in^2" Scale="0.000145038" Base="0" Order="1"/>
+    <Item32 Name="Poundals per Sq Feet" Prompt="pdl/ft^2" Scale="0.671969" Base="0" Order="1"/>
+    <Item33 Name="Pounds per Sq Foot" Prompt="lbf/ft^2" Scale="0.020885434" Base="0" Order="1"/>
+    <Item34 Name="Tonnes per Sq Centimeter" Prompt="tonf/cm^2" Scale="1.01972E-8" Base="0" Order="1"/>
+    <Item35 Name="Tonnes per Sq Meter" Prompt="fonf/m^2" Scale="0.000101972" Base="0" Order="1"/>
+    <Item36 Name="Tons (UK) per Sq Foot" Prompt="UK ton/ft^2" Scale="9.32385E-6" Base="0" Order="1"/>
+    <Item37 Name="Tons (UK) per Sq Inch" Prompt="UK ton/in^2" Scale="6.4749E-8" Base="0" Order="1"/>
+    <Item38 Name="Tons (US) per Sq Foot" Prompt="US ton/ft^2" Scale="1.04427E-5" Base="0" Order="1"/>
+    <Item39 Name="Tons (US) per Sq Inch" Prompt="US ton/in^2" Scale="7.25189E-8" Base="0" Order="1"/>
+    <Item40 Name="Torrs" Prompt="torr" Scale="0.007500617" Base="0" Order="1"/>
+  </Unit>
+  <Unit Name="Radiation Exposure" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Roentgens per Second" Prompt="R" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Millicoulomb per Kilogram" Prompt="mC/kg" Scale="0.258" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Radiation Exposure Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Roentgens per Second" Prompt="R/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Microroentgens per Hour" Prompt="uR/h" Scale="3600000000" Base="0" Order="3"/>
+    <Item3 Name="Millicoulombs per Kilogram Second" Prompt="mC/kg.s" Scale="0.258" Base="0" Order="3"/>
+    <Item4 Name="Picocoulombs per Kilogram Second" Prompt="pC/kg.s" Scale="258361200000" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Radiation Strength" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Eman" Prompt="eman" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Kilobecquerels per Cubic Meter" Prompt="kBq/m^3" Scale="3.7" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Radioactivity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Becquerels" Prompt="Bq" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Curies" Prompt="Ci" Scale="2.7E-11" Base="0" Order="4"/>
+    <Item3 Name="Gigabecquerels" Prompt="GBq" Scale="1E-9" Base="0" Order="4"/>
+    <Item4 Name="Kilobecquerels" Prompt="kBq" Scale="0.001" Base="0" Order="4"/>
+    <Item5 Name="Megabecquerels" Prompt="MBq" Scale="1E-6" Base="0" Order="4"/>
+    <Item6 Name="Millicuries" Prompt="mCi" Scale="2.7E-8" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Section Inertia Moment" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Biquadratic Meters" Prompt="m^4" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Biquadratic Centimeters" Prompt="cm^4" Scale="100000000" Base="0" Order="5"/>
+    <Item3 Name="Biquadratic Feet" Prompt="ft^4" Scale="115.861767457098" Base="0" Order="5"/>
+    <Item4 Name="Biquadratic Inches" Prompt="in^4" Scale="2402509.60999039" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Solid Angle" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Sphere Degrees" Prompt="sr" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Millisphere Degrees" Prompt="msr" Scale="1000" Base="0" Order="4"/>
+    <Item3 Name="Nanosphere Degrees" Prompt="nsr" Scale="1000000000" Base="0" Order="4"/>
+    <Item4 Name="Picosphere Degrees" Prompt="psr" Scale="1000000000000" Base="0" Order="4"/>
+    <Item5 Name="Square Degrees" Prompt="deg^2" Scale="3282.806" Base="0" Order="4"/>
+    <Item6 Name="Square Grads" Prompt="g^2" Scale="4052.847" Base="0" Order="4"/>
+  </Unit>
+  <Unit Name="Specific Area" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Sq Meters per Kilogram" Prompt="m^2/kg" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Acres per Pound" Prompt="acre/lb" Scale="0.00012085" Base="0" Order="5"/>
+    <Item3 Name="Hectares per Kilogram" Prompt="ha/kg" Scale="0.0001" Base="0" Order="5"/>
+    <Item4 Name="Sq Centimeters per Gram" Prompt="cm^2/g" Scale="10" Base="0" Order="5"/>
+    <Item5 Name="Sq Feet per Ounce" Prompt="ft^2/oz" Scale="0.305152" Base="0" Order="5"/>
+    <Item6 Name="Sq Feet per Pound" Prompt="ft^2/lb" Scale="4.88243" Base="0" Order="5"/>
+    <Item7 Name="Sq Inches per Pound" Prompt="in^2/lb" Scale="703.07" Base="0" Order="5"/>
+    <Item8 Name="Sq Miles per Ton" Prompt="mile^2/ton" Scale="0.000392298" Base="0" Order="5"/>
+    <Item9 Name="Sq Yards per Ounce" Prompt="yd^2/oz" Scale="0.0339057" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Specific Volume" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Cubic Meters Per Killogram" Prompt="m^3/kg" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Cubic Feet per Green" Prompt="ft^3/gr" Scale="2.28835" Base="0" Order="5"/>
+    <Item3 Name="Cubic Feet per Pound" Prompt="ft^3/lb" Scale="16.0185" Base="0" Order="5"/>
+    <Item4 Name="Cubic Feet per UK Ton" Prompt="ft^3/ton" Scale="35881.4" Base="0" Order="5"/>
+    <Item5 Name="Cubic Feet per US Ton" Prompt="ft^3/US ton" Scale="32037" Base="0" Order="5"/>
+    <Item6 Name="Cubic Inch per Green" Prompt="in^3/gr" Scale="0.003954" Base="0" Order="5"/>
+    <Item7 Name="Cubic Inch per Pound" Prompt="in^3/lb" Scale="27679.9" Base="0" Order="5"/>
+    <Item8 Name="Cubic Millimeters Per Gram" Prompt="cm^3/g" Scale="1000" Base="0" Order="5"/>
+    <Item9 Name="Cubic UK Yard per UK Ton" Prompt="yd^3/ton" Scale="1328.94" Base="0" Order="5"/>
+    <Item10 Name="Cubic US Yard per Short Ton" Prompt="yd^3/US ton" Scale="1186.55" Base="0" Order="5"/>
+    <Item11 Name="Cubic Yard per Pound" Prompt="yd^3/lb" Scale="0.5933" Base="0" Order="5"/>
+    <Item12 Name="Liters per Killogram" Prompt="l/kg" Scale="1000" Base="0" Order="5"/>
+    <Item13 Name="Milliliter per Gram" Prompt="ml/g" Scale="1000" Base="0" Order="5"/>
+    <Item14 Name="UK Gallon per Pound" Prompt="UK gal/lb" Scale="99.7763" Base="0" Order="5"/>
+    <Item15 Name="US Gallon per Green" Prompt="US gal/gr" Scale="0.0171181" Base="0" Order="5"/>
+    <Item16 Name="US Gallon per Pound" Prompt="US gal/lb" Scale="119.826" Base="0" Order="5"/>
+    <Item17 Name="US Petro. Berral per Pound" Prompt="bbl/lb" Scale="2.85301" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Specific gravity" Language="1" FunctionIndex="2" Order="0" ViewCount="2006101312">
+    <Item1 Name="Degrees A.P.I" Prompt="API" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Degrees Baume" Prompt="Baume" Scale="1.01071429" Base="261.961" Order="4"/>
+    <Item3 Name="Specific gravity" Prompt="sg" Scale="141.5" Base="131.5" Order="4"/>
+  </Unit>
+  <Unit Name="Surface Tension" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Newtons per Meter" Prompt="N/m" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Gram Forces per Centimeter" Prompt="gf/cm" Scale="1.0197162129779" Base="0" Order="5"/>
+    <Item3 Name="Kilogram Forces per Meter" Prompt="kgf/m" Scale="0.10197162129779" Base="0" Order="5"/>
+    <Item4 Name="Pound Forces per Foot" Prompt="lbf/ft" Scale="0.068521779647661" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Temperature" Language="1" FunctionIndex="1" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kelvin" Prompt="K" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Celsius" Prompt="C" Scale="1" Base="273.15" Order="9"/>
+    <Item3 Name="Fahrenheit" Prompt="F" Scale="0.555555556" Base="459.67" Order="6"/>
+    <Item4 Name="Rankine" Prompt="R" Scale="0.555555556" Base="0" Order="2"/>
+  </Unit>
+  <Unit Name="Time" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Days" Prompt="d" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Fortnights" Prompt="fd" Scale="0.071428571" Base="0" Order="5"/>
+    <Item3 Name="Hours" Prompt="h" Scale="24" Base="0" Order="5"/>
+    <Item4 Name="Microseconds" Prompt="us" Scale="86400000000" Base="0" Order="5"/>
+    <Item5 Name="Milliseconds" Prompt="ms" Scale="86400000" Base="0" Order="5"/>
+    <Item6 Name="Minutes" Prompt="min" Scale="1440" Base="0" Order="5"/>
+    <Item7 Name="Months (28 days)" Prompt="mon28" Scale="0.035714286" Base="0" Order="5"/>
+    <Item8 Name="Months (30 days)" Prompt="mon30" Scale="0.033333333" Base="0" Order="5"/>
+    <Item9 Name="Months (Synodic)" Prompt="monsyn" Scale="0.033863191" Base="0" Order="5"/>
+    <Item10 Name="Seconds" Prompt="s" Scale="86400" Base="0" Order="5"/>
+    <Item11 Name="Sidereal Days" Prompt="sd" Scale="1.002737904" Base="0" Order="5"/>
+    <Item12 Name="Weeks" Prompt="wk" Scale="0.142857143" Base="0" Order="5"/>
+    <Item13 Name="Years (360 days)" Prompt="y360" Scale="0.002777778" Base="0" Order="5"/>
+    <Item14 Name="Years (365 days)" Prompt="y365" Scale="0.002739726" Base="0" Order="5"/>
+    <Item15 Name="Years (Gregorian)" Prompt="yGr" Scale="0.002737907" Base="0" Order="5"/>
+    <Item16 Name="Years (Julian)" Prompt="yJul" Scale="0.002737851" Base="0" Order="5"/>
+    <Item17 Name="Years (Tropical)" Prompt="yTr" Scale="0.002737909" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Torque" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Newton Meters" Prompt="N.m" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Dyne Centimeters" Prompt="dyn.cm" Scale="10000000" Base="0" Order="5"/>
+    <Item3 Name="Gram Centimeters" Prompt="gf.cm" Scale="10197.16213" Base="0" Order="5"/>
+    <Item4 Name="Kilogram Meters" Prompt="kgf.m" Scale="0.10197162129779" Base="0" Order="5"/>
+    <Item5 Name="Nanonewton Meters" Prompt="nN.m" Scale="1000000000" Base="0" Order="5"/>
+    <Item6 Name="Nanonewton Microns" Prompt="nN.um" Scale="1E15" Base="0" Order="5"/>
+    <Item7 Name="Newton Microns" Prompt="N.um" Scale="1000000" Base="0" Order="5"/>
+    <Item8 Name="Ounce Inches" Prompt="ozf.in" Scale="141.6119327" Base="0" Order="5"/>
+    <Item9 Name="Pound Feet" Prompt="lbf.ft" Scale="0.737562149" Base="0" Order="5"/>
+    <Item10 Name="Pound Inches" Prompt="lbf.in" Scale="8.850745791" Base="0" Order="5"/>
+    <Item11 Name="Poundal Feet" Prompt="pdl.ft" Scale="23.7303604" Base="0" Order="5"/>
+    <Item12 Name="Ton (Short) Feet" Prompt="US tonf.ft" Scale="0.000368781" Base="0" Order="5"/>
+    <Item13 Name="Ton Feet" Prompt="fonf.ft" Scale="0.000329269" Base="0" Order="5"/>
+    <Item14 Name="Tonne Meters" Prompt="tf.m" Scale="0.000101972" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Velocity" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Meters per second" Prompt="m/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Centimeters per Hour" Prompt="cm/h" Scale="360000" Base="0" Order="5"/>
+    <Item3 Name="Centimeters per Minute" Prompt="cm/min" Scale="6000" Base="0" Order="5"/>
+    <Item4 Name="Centimeters per Second" Prompt="cm/s" Scale="100" Base="0" Order="5"/>
+    <Item5 Name="Feet per Hour" Prompt="ft/h" Scale="11811.02362" Base="0" Order="5"/>
+    <Item6 Name="Feet per Minute" Prompt="ft/min" Scale="196.8503937" Base="0" Order="5"/>
+    <Item7 Name="Feet per Second" Prompt="ft/s" Scale="3.280839895" Base="0" Order="5"/>
+    <Item8 Name="Inches per Hour" Prompt="in/h" Scale="141732.2835" Base="0" Order="5"/>
+    <Item9 Name="Inches per Minute" Prompt="in/min" Scale="2362.204724" Base="0" Order="5"/>
+    <Item10 Name="Inches per Second" Prompt="in/s" Scale="39.37007874" Base="0" Order="5"/>
+    <Item11 Name="International Sea Mile per Hour (nmile/h)" Prompt="kn" Scale="1.94384" Base="0" Order="5"/>
+    <Item12 Name="Kilometer per Hour" Prompt="KPH" Scale="3.6" Base="0" Order="5"/>
+    <Item13 Name="Kilometers per Hour" Prompt="km/h" Scale="3.6" Base="0" Order="5"/>
+    <Item14 Name="Kilometers per Minute" Prompt="km/min" Scale="0.06" Base="0" Order="5"/>
+    <Item15 Name="Kilometers per Second" Prompt="km/s" Scale="0.001" Base="0" Order="5"/>
+    <Item16 Name="MPH" Prompt="MPH" Scale="2.236936292" Base="0" Order="5"/>
+    <Item17 Name="Mach (Dry Air at Sea level)" Prompt="Mach" Scale="0.002929211" Base="0" Order="5"/>
+    <Item18 Name="Meters per Hour" Prompt="m/h" Scale="3600" Base="0" Order="5"/>
+    <Item19 Name="Meters per Minute" Prompt="m/min" Scale="60" Base="0" Order="5"/>
+    <Item20 Name="Microns per Microsecond" Prompt="um/us" Scale="1" Base="0" Order="5"/>
+    <Item21 Name="Microns per Second" Prompt="um/s" Scale="1000000" Base="0" Order="5"/>
+    <Item22 Name="Miles per Hour" Prompt="mile/h" Scale="2.236936292" Base="0" Order="5"/>
+    <Item23 Name="Miles per Minute" Prompt="mile/min" Scale="0.037282272" Base="0" Order="5"/>
+    <Item24 Name="Miles per Second" Prompt="mile/s" Scale="0.000621371" Base="0" Order="5"/>
+    <Item25 Name="Millimeters per Second" Prompt="mm/s" Scale="1000" Base="0" Order="5"/>
+    <Item26 Name="Speed of Light" Prompt="Speed of Light" Scale="3.33564E-9" Base="0" Order="5"/>
+    <Item27 Name="Speed of Sound (Dry Air at Sea level)" Prompt="Speed of Sound" Scale="0.002929211" Base="0" Order="5"/>
+    <Item28 Name="UK Sea Mile per Hour" Prompt="UK Knot" Scale="1.941753052" Base="0" Order="5"/>
+    <Item29 Name="US Sea Mile per Hour" Prompt="US Knot" Scale="1.943843048" Base="0" Order="5"/>
+    <Item30 Name="Yards per Hour" Prompt="yd/h" Scale="3937.007874" Base="0" Order="5"/>
+    <Item31 Name="Yards per Minite" Prompt="yd/min" Scale="65.6167979" Base="0" Order="5"/>
+    <Item32 Name="Yards per Second" Prompt="yd/s" Scale="1.093613298" Base="0" Order="5"/>
+  </Unit>
+  <Unit Name="Voltage" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="SI Volts" Prompt="V" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="International Volts" Prompt="Vint" Scale="0.999660115560709" Base="0" Order="3"/>
+    <Item3 Name="Kilovolts" Prompt="kV" Scale="0.001" Base="0" Order="3"/>
+    <Item4 Name="Magnetism Volts" Prompt="" Scale="100000000" Base="0" Order="3"/>
+    <Item5 Name="Millivolts" Prompt="mV" Scale="1000" Base="0" Order="3"/>
+    <Item6 Name="Static Volts" Prompt="sV" Scale="0.003336" Base="0" Order="3"/>
+  </Unit>
+  <Unit Name="Volume Flow Rate" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Cubic Meters per Second" Prompt="m^3/s" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="10^4US Petro. Berral Per Year" Prompt="10^4 bbl/a" Scale="19841.8" Base="0" Order="5"/>
+    <Item3 Name="Acre-Feet per Day" Prompt="a.ft/d" Scale="70.04561994" Base="0" Order="5"/>
+    <Item4 Name="Acre-Feet per Year (365 days)" Prompt="a.ft/a" Scale="25566.65128" Base="0" Order="5"/>
+    <Item5 Name="Acre-Inches per Day" Prompt="a.in/d" Scale="840.5474393" Base="0" Order="5"/>
+    <Item6 Name="Cubic Centimeters per Hour" Prompt="cm^3/h" Scale="3600000000" Base="0" Order="5"/>
+    <Item7 Name="Cubic Centimeters per Minute" Prompt="cm^3/min" Scale="60000000" Base="0" Order="5"/>
+    <Item8 Name="Cubic Centimeters per Second" Prompt="cm^3/s" Scale="1000000" Base="0" Order="5"/>
+    <Item9 Name="Cubic Feet per Day" Prompt="ft^3/d" Scale="3051200" Base="0" Order="5"/>
+    <Item10 Name="Cubic Feet per Hour" Prompt="ft^3/h" Scale="127132.8002" Base="0" Order="5"/>
+    <Item11 Name="Cubic Feet per Minute" Prompt="ft^3/min" Scale="2118.880003" Base="0" Order="5"/>
+    <Item12 Name="Cubic Feet per Second" Prompt="ft^3/s" Scale="35.31466672" Base="0" Order="5"/>
+    <Item13 Name="Cubic Inches per Hour" Prompt="in^3/h" Scale="219685478.7" Base="0" Order="5"/>
+    <Item14 Name="Cubic Inches per Minute" Prompt="in^3/min" Scale="3661424.646" Base="0" Order="5"/>
+    <Item15 Name="Cubic Inches per Second" Prompt="in^3/s" Scale="61023.74409" Base="0" Order="5"/>
+    <Item16 Name="Cubic Meters per Day" Prompt="m^3/d" Scale="86400" Base="0" Order="5"/>
+    <Item17 Name="Cubic Meters per Hour" Prompt="m^3/h" Scale="3600" Base="0" Order="5"/>
+    <Item18 Name="Cubic Meters per Minute" Prompt="m^3/min" Scale="60" Base="0" Order="5"/>
+    <Item19 Name="Cubic Yard per Day" Prompt="yd^3/d" Scale="4708.62" Base="0" Order="5"/>
+    <Item20 Name="Cubic Yards per Hour" Prompt="yd^3/h" Scale="4708.62223" Base="0" Order="5"/>
+    <Item21 Name="Cubic Yards per Minute" Prompt="yd^3/min" Scale="78.47703716" Base="0" Order="5"/>
+    <Item22 Name="Cubic Yards per Second" Prompt="yd^3/s" Scale="1.307950619" Base="0" Order="5"/>
+    <Item23 Name="Fluid Ounces (UK) per Hour" Prompt="UK fl oz/h" Scale="126705823.9" Base="0" Order="5"/>
+    <Item24 Name="Fluid Ounces (UK) per Minute" Prompt="UK fl oz/min" Scale="2111763.732" Base="0" Order="5"/>
+    <Item25 Name="Fluid Ounces (UK) per Second" Prompt="UK fl oz/s" Scale="35196.06219" Base="0" Order="5"/>
+    <Item26 Name="Fluid Ounces (US) per Hour" Prompt="US fl oz/h" Scale="121733883.4" Base="0" Order="5"/>
+    <Item27 Name="Fluid Ounces (US) per Minute" Prompt="US fl oz/min" Scale="2028898.057" Base="0" Order="5"/>
+    <Item28 Name="Fluid Ounces (US) per Second" Prompt="US fl oz/s" Scale="33814.96762" Base="0" Order="5"/>
+    <Item29 Name="Gallons (UK) per Hour" Prompt="UK gal/h" Scale="791911.3994" Base="0" Order="5"/>
+    <Item30 Name="Gallons (UK) per Minute" Prompt="UK gal/min" Scale="13198.52332" Base="0" Order="5"/>
+    <Item31 Name="Gallons (UK) per Second" Prompt="UK gal/s" Scale="219.9753887" Base="0" Order="5"/>
+    <Item32 Name="Gallons (US) per Hour" Prompt="US gal/h" Scale="951045.9642" Base="0" Order="5"/>
+    <Item33 Name="Gallons (US) per Minute" Prompt="US gal/min" Scale="15850.76607" Base="0" Order="5"/>
+    <Item34 Name="Gallons (US) per Second" Prompt="US gal/s" Scale="264.1794345" Base="0" Order="5"/>
+    <Item35 Name="Kilolitres per Hour" Prompt="kl/h" Scale="3600" Base="0" Order="5"/>
+    <Item36 Name="Kilolitres per Minute" Prompt="kl/min" Scale="60" Base="0" Order="5"/>
+    <Item37 Name="Kilolitres per Second" Prompt="kl/s" Scale="1" Base="0" Order="5"/>
+    <Item38 Name="Litres per Hour" Prompt="l/h" Scale="3600000" Base="0" Order="5"/>
+    <Item39 Name="Litres per Minute" Prompt="l/min" Scale="60000" Base="0" Order="5"/>
+    <Item40 Name="Litres per Second" Prompt="l/s" Scale="1000" Base="0" Order="5"/>
+    <Item41 Name="MMSCFD" Prompt="MMSCFD" Scale="3.051187205" Base="0" Order="5"/>
+    <Item42 Name="MegaGallons (UK) per Year (365 days)" Prompt="UK Mgal/a" Scale="6937.143858" Base="0" Order="5"/>
+    <Item43 Name="MegaGallons (US) per Year (365 days)" Prompt="US Mgal/a" Scale="8331.162646" Base="0" Order="5"/>
+    <Item44 Name="Millilitres per Hour" Prompt="ml/h" Scale="3600000000" Base="0" Order="5"/>
+    <Item45 Name="Millilitres per Minute" Prompt="ml/min" Scale="60000000" Base="0" Order="5"/>
+    <Item46 Name="Millilitres per Second" Prompt="ml/s" Scale="1000000" Base="0" Order="5"/>
+    <Item47 Name="US Petro. Berral Per Day" Prompt="bbl/d" Scale="54.3612" Base="0" Order="5"/>
+    <Item48 Name="US Petro. Berral Per Hour" Prompt="bbl/h" Scale="22650" Base="0" Order="5"/>
+    <Item49 Name="US Petro. Berral Per Minite" Prompt="bbl/min" Scale="377.508" Base="0" Order="5"/>
+    <Item50 Name="US Petro. Berral Per Second" Prompt="bbl/s" Scale="6.2918" Base="0" Order="5"/>
+  </Unit>
+  <Unit66 Name="Weight per unit of area" Language="1" FunctionIndex="0" Order="0" ViewCount="2006101312">
+    <Item1 Name="Kilogram per Sq Meter" Prompt="kg/m^2" Scale="1" Base="0" Order="10"/>
+    <Item2 Name="Grams per Sq Centimeter" Prompt="g/cm^2" Scale="0.1" Base="0" Order="5"/>
+    <Item3 Name="Kilograms per Hectare" Prompt="kg/ha" Scale="10000" Base="0" Order="5"/>
+    <Item4 Name="Kilograms per Sq Centimeter" Prompt="kg/cm^2" Scale="0.0001" Base="0" Order="5"/>
+    <Item5 Name="Kilograms per Sq Millimeter" Prompt="kg/mm^2" Scale="1E-6" Base="0" Order="5"/>
+    <Item6 Name="Ounces per Sq Foot" Prompt="oz/ft^2" Scale="3.27706" Base="0" Order="5"/>
+    <Item7 Name="Ounces per Sq Yard" Prompt="oz/yd^2" Scale="29.4935" Base="0" Order="5"/>
+    <Item8 Name="Pounds per Acre" Prompt="lb/acre" Scale="8921.79" Base="0" Order="5"/>
+    <Item9 Name="Pounds per Sq Foot" Prompt="lb/ft^2" Scale="0.2048161" Base="0" Order="5"/>
+    <Item10 Name="Pounds per Sq Inch" Prompt="lb/in^2" Scale="0.00142233" Base="0" Order="5"/>
+    <Item11 Name="UK tons per Sq Foot" Prompt="tons/ft^2" Scale="9.144E-5" Base="0" Order="5"/>
+    <Item12 Name="UK tons per Sq Mile" Prompt="ton/mile^2" Scale="2549.08" Base="0" Order="5"/>
+    <Item13 Name="US tons per Sq Foot" Prompt="US ton/ft^2" Scale="0.00010241" Base="0" Order="5"/>
+  </Unit>
+</QUint>
