@@ -10,7 +10,8 @@ import { useState } from "react";
 import React from "react";
 import Button from "./Button"
 import TextField from "@mui/material/TextField"
-import UnitTest from "./data/UnitTest.xml"
+import UnitTest from "./data/UnitTest.xml";
+import DropdownMenu from "./DropdownMenu.js"
 
 function App() {
   const [active, setActive] = useState("1");
@@ -53,6 +54,7 @@ function App() {
           console.log("one")
           current = <div className="prompt">
             <TextField id="standard-basic" label="Input thing to search" variant="standard" className="prompt"/>
+            <DropdownMenu />
           </div>
           break;
         case 2:
