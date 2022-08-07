@@ -133,7 +133,7 @@
     <Item35 Name="Pints (UK)" Prompt="UK Pint" Scale="1759.80311" Base="0" Order="0"/>
     <Item36 Name="Pints (US Dry)" Prompt="US Dry Pint" Scale="1814.552713" Base="0" Order="0"/>
     <Item37 Name="Pints (US)" Prompt="US Pint" Scale="2113.435476" Base="0" Order="0"/>
-    <Item38 Name="Quarts (UK Dry)" Prompt="Quart" Scale="879.9718409" Base="0" Order="0"/>
+    <Item38 Name="Quarts (UK Dry)" Prompt="Quart" Scale="2113.435476" Base="0" Order="0"/>
     <Item39 Name="Quarts (UK)" Prompt="Quart" Scale="879.9015549" Base="0" Order="0"/>
     <Item40 Name="Quarts (US Dry)" Prompt="Quart" Scale="907.2763564" Base="0" Order="0"/>
     <Item41 Name="Quarts (US)" Prompt="Quart" Scale="1056.717738" Base="0" Order="0"/>
@@ -188,7 +188,7 @@
     <Item8 Name="Pound Force Hour per Sq Feet" Prompt="lbf.h/ft^2" Scale="5.8E-6" Base="0" Order="2"/>
     <Item9 Name="Pound Force Seconds per Sq Feet" Prompt="lbf.s/ft^2" Scale="0.020885" Base="0" Order="2"/>
     <Item10 Name="Pound Force Seconds per Sq Inch" Prompt="lbf.s/in^2" Scale="0.00014504" Base="0" Order="2"/>
-    <Item11 Name="Poundal Force Seconds per Sq Feet" Prompt="pdl.s/ft^2" Scale="0.671969" Base="0" Order="2"/>
+    <Item11 Name="Poundal Force Seconds per Sq Feet" Prompt="lbf.h/ft^2" Scale="0.671969" Base="0" Order="2"/>
     <Item12 Name="Pounds per Feet Hour" Prompt="lb/ft.h" Scale="2419.09" Base="0" Order="2"/>
     <Item13 Name="Pounds per Feet Second" Prompt="lb/ft.s" Scale="8708700" Base="0" Order="2"/>
     <Item14 Name="Reyn" Prompt="reyn" Scale="0.00014504" Base="0" Order="2"/>

@@ -3,10 +3,10 @@
 
 .App {
   font-family: 'Outfit', sans-serif;
-  text-align: center;
 }
 
 .one {
+  text-align: center;
   background-color: white;
   border-right: 1px solid black;
   min-height: 100vh;
@@ -14,6 +14,8 @@
 
 .two {
   background-color: white;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 
 .prompt {

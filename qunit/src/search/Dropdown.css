@@ -1,0 +1,19 @@
+#dropdown-basic {
+    /* background-color: #749672; */
+    background-color: #fffff5;
+    color: #000000;
+    border: 0px;
+    outline: none;
+    box-shadow: inset 20px 20px #ffffff;
+    text-align: left;
+    width: auto;
+}
+
+#dropdownmenu {
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+#dropdown {
+    padding-right: 20px;
+}

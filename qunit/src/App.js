@@ -11,41 +11,24 @@ import React from "react";
 import Button from "./Button"
 import TextField from "@mui/material/TextField"
 import UnitTest from "./data/UnitTest.xml";
-import DropdownMenu from "./DropdownMenu.js"
+import DropdownMenu from "./search/DropdownMenu.js"
+let data = require('./data/units.json');
 
 function App() {
   const [active, setActive] = useState("1");
 
   const setActiveTab = (id) => {
       setActive(id)
-      getXML();
+      // getXML();
   }
 
-  function readXML(xmlFile) {
-    const xmlDoc = xmlFile.responseXML;
-    var parser = new DOMParser();
-    var x;    
-    var txt = "";
-    var y;
-    y = xmlDoc.getElementsByTagName("entryresult");//.childNodes[0];
-    x = y[1].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-  }
+  // function parseDropdown() {
+  //   for( var title in data ){
+  //     console.log(title);
+  //   }
+  // }
 
-  function getXML() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        console.log("RESPONSE TEXT")
-        console.log(xmlhttp.responseText)
-        // readXML(xmlhttp)
-      }
-    };
-    xmlhttp.open("GET", "./data/UnitTest.xml", true);
-    // method: the type of request: GET or POST
-    // url: the file location
-    // async: true (asynchronous) or false (synchronous)
-    xmlhttp.send();
-  }
+  // parseDropdown()
 
   const getActiveTab = (index) => {
       let current = <div><p>{active}</p></div>
