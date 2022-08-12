@@ -837,10 +837,10 @@
         "Item17": {"Name": "US Petro. Berral per Pound", "Prompt": "bbl/lb", "Scale": "2.85301", "Base": "0", "Order": "5"}
       },
       "Specific gravity": {
-        "id": {"Name": "Specific gravity", "Language": "1", "FunctionIndex": "0", "Order": "0", "ViewCount": "2006101312"},
+        "id": {"Name": "Specific gravity", "Language": "1", "FunctionIndex": "2", "Order": "0", "ViewCount": "2006101312"},
         "Item1": {"Name": "Degrees A.P.I", "Prompt": "API", "Scale": "1", "Base": "0", "Order": "10"},
-        "Item2": {"Name": "Degrees Baume", "Prompt": "Baume", "Scale": "1.01071429", "Base": "0", "Order": "4"},
-        "Item3": {"Name": "Specific gravity", "Prompt": "sg", "Scale": "141.5", "Base": "0", "Order": "4"}
+        "Item2": {"Name": "Degrees Baume", "Prompt": "Baume", "Scale": "1.01071429", "Base": "261.961", "Order": "4"},
+        "Item3": {"Name": "Specific gravity", "Prompt": "sg", "Scale": "141.5", "Base": "131.5", "Order": "4"}
       },
       "Surface Tension": {
         "id": {"Name": "Surface Tension", "Language": "1", "FunctionIndex": "0", "Order": "0", "ViewCount": "2006101312"},
@@ -850,11 +850,11 @@
         "Item4": {"Name": "Pound Forces per Foot", "Prompt": "lbf/ft", "Scale": "0.068521779647661", "Base": "0", "Order": "5"}
       },
       "Temperature": {
-        "id": {"Name": "Temperature", "Language": "1", "FunctionIndex": "0", "Order": "0", "ViewCount": "2006101312"},
+        "id": {"Name": "Temperature", "Language": "1", "FunctionIndex": "1", "Order": "0", "ViewCount": "2006101312"},
         "Item1": {"Name": "Kelvin", "Prompt": "K", "Scale": "1", "Base": "0", "Order": "10"},
         "Item2": {"Name": "Celsius", "Prompt": "C", "Scale": "1", "Base": "273.15", "Order": "9"},
-        "Item3": {"Name": "Fahrenheit", "Prompt": "F", "Scale": "0.555555556", "Base": "459.67", "Order": "6"},
-        "Item4": {"Name": "Rankine", "Prompt": "R", "Scale": "0.555555556", "Base": "0", "Order": "2"}
+        "Item3": {"Name": "Fahrenheit", "Prompt": "F", "Scale": "1.8", "Base": "459.67", "Order": "6"},
+        "Item4": {"Name": "Rankine", "Prompt": "R", "Scale": "1.8", "Base": "0", "Order": "2"}
       },
       "Time": {
         "id": {"Name": "Time", "Language": "1", "FunctionIndex": "0", "Order": "0", "ViewCount": "2006101312"},

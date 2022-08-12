@@ -3,6 +3,12 @@
 
 .App {
   font-family: 'Outfit', sans-serif;
+  padding-right: 0px;
+}
+
+.no-gutter > [class*='col-'] {
+  padding-right:0;
+  padding-left:0;
 }
 
 .one {
@@ -12,38 +18,61 @@
   min-height: 100vh;
 }
 
+.about-div {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  padding-right: 10px; 
+  padding-left: 10px;
+}
+
+.about {
+  font-size: 18px;
+}
+
+.about-header {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
 .two {
   background-color: white;
-  max-height: 100vh;
+  width: 100%;
+  padding-left: 9vw !important;
   overflow-y: auto;
 }
 
 .prompt {
   margin-top: 30px;
   width: 60vw;
-  color: #749672 !important;
+  color: #404040 !important;
 }
 
 label.Mui-focused {
-  color: #749672 !important;
+  color: #404040 !important;
 }
 
 .MuiOutlinedInput-root {
-  border-color: #749672;
+  border-color: #404040;
 }
 
 .Mui-focused fieldset {
-  border-color: #749672;
+  border-color: #404040;
 }
 
 .MuiInput-underline:before {
-  border-color: #749672;
+  border-color: #404040;
 }
 
 .MuiInput-underline:hover:before {
-  border-color: #749672;
+  border-color: #404040;
 }
 
 .MuiInput-underline:after {
-  border-color: #749672;
+  border-color: #404040;
+}
+
+div.container {
+  margin-right: 0px;
+  margin-left: 0px;
 }

@@ -3,8 +3,6 @@ import { useState } from "react";
 import React from "react";
 
 function Button(props) {
-  console.log(props.status)
-  console.log(props.type)
 
   return (
     <div className={props.type + " " + (props.status ? "activeClass" : "inactiveClass")} onClick={() => props.onClick(props.id)}>

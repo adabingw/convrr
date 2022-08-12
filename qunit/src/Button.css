@@ -2,9 +2,11 @@
 
 .button {
     margin-top: 10px;
-    font-size: 2vw;
-    padding-top: 3px; 
-    padding-bottom: 3px;
+    font-size: 1.8vw;
+    padding-top: 1px; 
+    padding-bottom: 1px;
+    padding-left: 2px; 
+    padding-right: 2px;
     margin-left: 2vw; 
     margin-right: 2vw;
     border-radius: 12px;
@@ -17,7 +19,7 @@
 .button.activeClass {
     font-size: 1vw;
     color: white;
-    background-color: #749672;
+    background-color: #404040;
 }
 
 .button.inactiveClass {
@@ -30,7 +32,7 @@
 }
 
 .button.inactiveClass:hover {
-    color: #749672;
+    color: #696969;
 }
 
 .home {
@@ -39,7 +41,7 @@
     margin-bottom: 8px;
     font-size: 4vw !important;
     font-weight: bolder;
-    color: #749672;
+    color: #404040;
 }
 
 .home:hover {

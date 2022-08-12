@@ -12,6 +12,7 @@
 #dropdownmenu {
     max-height: 280px;
     overflow-y: auto;
+    width: 100%;
 }
 
 #dropdown {
