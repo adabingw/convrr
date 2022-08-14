@@ -8,29 +8,19 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.js";
 import { useState } from "react";
 import React from "react";
-import Button from "./Button"
-import TextField from "@mui/material/TextField"
-import UnitTest from "./data/UnitTest.xml";
-import DropdownMenu from "./unit/DropdownMenu.js"
+import Button from "./utils/Button"
+import QUnit from "./unit/QUnit.js"
 
 let data = require('./data/units.json');
 
 function App() {
   const [active, setActive] = useState("1");
 
-  const setActiveTab = (id) => {
-      setActive(id)
-  }
-
-
   const getActiveTab = (index) => {
       let current = <div><p>{active}</p></div>
       switch(index) {
         case 1: 
-          current = <div className="prompt">
-            <TextField id="standard-basic" label="Input thing to search" variant="standard" className="prompt"/>
-            <DropdownMenu />
-          </div>
+          current = <QUnit />
           break;
         case 2:
           current = <div><p>shiho sakurashiro</p></div> 
@@ -49,10 +39,7 @@ function App() {
           current = <div><p>mai hirose</p></div>
           break;
         default: 
-          current = <div className="prompt">
-          <TextField id="standard-basic" label="Input thing to search" variant="standard" className="prompt"/>
-          <DropdownMenu />
-        </div>
+          current = <QUnit />
       }
       return current;
   }
@@ -63,10 +50,10 @@ function App() {
         <Row >
           <Col xs={3} className="one">
             <div className="menuFlex">
-              <Button type="home" id="1" onClick={(()=>setActiveTab(1))} text="CONVRR" />
-              <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="U N I T S"/>
-              {/* <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="W I K I"/> */}
-              <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="A B O U T"/>
+              <Button type="home" id="1" onClick={(()=>updateRefresh())} text="CONVRR" />
+              <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="UNITS"/>
+              <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="CURRENCY"/>
+              <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="ABOUT"/>
               {/* <Button type="button" id="4" onClick={()=>setActiveTab(4)} status={active == "4"} text="G I T H U B"/> */}
             </div>
           </Col>

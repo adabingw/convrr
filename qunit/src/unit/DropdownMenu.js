@@ -1,6 +1,5 @@
 import './Dropdown.css';
-import './UnitItem.css'; 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import React from "react";
 import Dropdown from 'react-bootstrap/Dropdown';
 import Container from "react-bootstrap/Container";
@@ -14,6 +13,7 @@ let data = require('../data/units.json');
 
 function DropdownMenu(props) {
 
+  // unit category
   let dataTitles = []
 
   // parses the titles for the dropdown menu
@@ -25,7 +25,7 @@ function DropdownMenu(props) {
 
   parseDropdown()
 
-  // selected item is the item selected from the dropdown menu, default to distance/length
+  // selected item is the item selected from the dropdown menu, default to length;distance
   // list is the list of units we're showing, default to distance/length
   // focus is the currently focused unit, default to 0
   // scale is the scale of the currently focused unit, default to 1
@@ -33,23 +33,54 @@ function DropdownMenu(props) {
   const [list, setList] = useState(changeList(0))
   const [focus, setFocus] = useState(0); 
   const [scale, setScale] = useState(1);
+  const [curr, setCurr] = useState(0);
 
-  /**
-   * 
-   * @param {*} index index number of unit
-   * @param {*} unit name of unit
-   * @param {*} event handling events
-   */
-  function convert(index, unit, event, s, f, b) {
+  let prompt = props.prompt
+  // 0: "Length;Distance"
+  // 1: (5) ['Prompt', 'm', 1, '1', '0']
+  let val = props.val
+  let species = props.type
+
+  if (typeof val != "undefined") {
+      const curr_list = [0, 0, 0, prompt[1][3], prompt[1][2], prompt[1][4], prompt[0], val, 1]
+      if (String(species).toLowerCase() == "category") {
+        if (selectedItem != prompt[0]) {
+          setSelectedItem(prompt[0])
+          changeSelectedItem(prompt[0], dataTitles.indexOf(prompt[0]))
+        }
+      } else {
+        if (JSON.stringify(curr_list) != JSON.stringify(curr)) {
+          setCurr(curr_list)
+          convert(0, 0, 0, prompt[1][3], prompt[1][2], prompt[1][4], prompt[0], val, 1)
+        }
+      }
+  }
+
+
+  function convert(index, unit, event, s, f, b, name, newVal, type, u) {
     let dataContent = []
-    dataContent = data[dataTitles[index]]
+
+    // get list of units based on index and dataTitles
+    // dataContent = data[dataTitles[index]]
     let unitListComponents = []
-    var newThing = event.target.value
+    var newThing = 1
 
-    console.log("f: ", f)
-    console.log(dataContent["id"]["FunctionIndex"])
+    // eslint-disable-next-line default-case
+    switch(type) {
+      // from input
+      case 0:
+        dataContent = data[dataTitles[index]]
+        newThing = event.target.value
+        break; 
+      // from search
+      case 1:
+        dataContent = data[name]
+        setSelectedItem(dataTitles[dataTitles.indexOf(name)])
+        newThing = newVal
+        break;
+    }
 
-   if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
+    if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
       Object.keys(dataContent).map((oneKey, i) => {
           if (oneKey != "id") {
             if (i == f) {
@@ -58,7 +89,7 @@ function DropdownMenu(props) {
                 <Container>
                     <Row>
                     <Col xs={6} className="unit">
-                        <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                        <p id="unitname" className="colour">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
                     </Col>
                     <Col xs={6} className="val">
                         <input type="number" name="name" defaultValue={newThing} id="textfield"
@@ -75,7 +106,6 @@ function DropdownMenu(props) {
                 </div>
               )
             } else {
-              console.log((parseFloat((dataContent[oneKey]["Scale"]) * newThing) / s) - Number(dataContent[oneKey]["Base"] - b*(dataContent[oneKey]["Scale"] / s)))
               unitListComponents.push(
                 <div className="flexUnit">
                 <Container>
@@ -107,7 +137,6 @@ function DropdownMenu(props) {
         let baumeVal = dataContent["Item2"]["Scale"]
         let sgVal = dataContent["Item3"]["Scale"]
         let sgData = []
-        console.log("newThing ", newThing);
         switch (f - 1) {
           case 0: // API 
             apiVal = newThing
@@ -117,7 +146,6 @@ function DropdownMenu(props) {
             } else {
               baumeVal = 145.0 * ( 1.0 - 1.0 / sgVal);
             }
-            console.log("baumeVal in 0: ", baumeVal)
             break; 
           case 1: // Baume
             baumeVal = newThing
@@ -167,7 +195,7 @@ function DropdownMenu(props) {
                       onChange={(e) => textChange(i, dataContent[oneKey]["Scale"], e)}
                       onClick={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
                       onFocus={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])}
+                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"], null, null, 0)}
                       onKeyPress={(e) => handleKeyPress(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])} 
                       />
                   </Col>
@@ -177,19 +205,16 @@ function DropdownMenu(props) {
             )
           }
       })
-
-        // update list
-
     } 
-    setList(unitListComponents)
+    if (unitListComponents != list) {
+      setList(unitListComponents)
+    }
   }
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleKeyPress(index, unit, event, s, f, b) {
-      console.log("handlekey index: ", index);
-      console.log("handlekey unit: ", unit);
       if(event.key === 'Enter'){
-          convert(index, unit, event, s, f, b)
+          convert(index, unit, event, s, f, b, null, null, 0)
       }
   }
 
@@ -212,7 +237,6 @@ function DropdownMenu(props) {
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
       Object.keys(dataContent).map((oneKey, i) => {
         if (oneKey != "id") {
-            console.log("index in changeSelectedItem ", index)
             unitListComponents.push(
               <div className="flexUnit">
               <Container>
@@ -226,7 +250,7 @@ function DropdownMenu(props) {
                       onChange={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
                       onClick={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
                       onFocus={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])}
+                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"], null, null, 0)}
                       onKeyPress={(e) => handleKeyPress(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])} 
                       />
                   </Col>
@@ -260,7 +284,7 @@ function DropdownMenu(props) {
                       onChange={(e) => textChange(i, dataContent[oneKey]["Scale"], e)}
                       onClick={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
                       onFocus={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])}
+                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"], null, null, 0)}
                       onKeyPress={(e) => handleKeyPress(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])} 
                       />
                   </Col>
@@ -272,6 +296,15 @@ function DropdownMenu(props) {
       })
     }
     setList(unitListComponents)
+  }
+
+  function DropdownItemClick(title, index) {
+    setCurr(0)
+    prompt = undefined 
+    val = undefined 
+    species = undefined
+    props.zombie()
+    changeSelectedItem(title, index)
   }
 
   function changeList(index) {
@@ -292,9 +325,9 @@ function DropdownMenu(props) {
                       <input type="number" name="name" defaultValue={ Number(dataContent[oneKey]["Scale"]) - Number(dataContent[oneKey]["Base"]) } id="textfield"
                       key={ dataContent[oneKey]["Scale"] }
                       onChange={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onClick={(e) =>  textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onFocus={(e) =>  textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
-                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])}
+                      onClick={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
+                      onFocus={(e) => textChange(i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Name"], e)}
+                      onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"], null, null, 0)}
                       onKeyPress={(e) => handleKeyPress(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"])} 
                       />
                   </Col>
@@ -316,7 +349,7 @@ function DropdownMenu(props) {
 
           <Dropdown.Menu id="dropdownmenu">
             {dataTitles.map((title, index) => {
-              return <Dropdown.Item onClick={()=>changeSelectedItem(title, index)}>{title}</Dropdown.Item>
+              return <Dropdown.Item onClick={()=>DropdownItemClick(title, index)}>{title}</Dropdown.Item>
             })}
           </Dropdown.Menu>
         </Dropdown>
@@ -324,6 +357,8 @@ function DropdownMenu(props) {
           { list.map((item) =>  {
             return item;
           })}
+        </div>
+        <div>
         </div>
     </div>
   );

@@ -58,9 +58,9 @@
         "Item2": {"Name": "Milliradians", "Prompt": "mrad", "Scale": "17.45329252", "Base": "0", "Order": "8"},
         "Item3": {"Name": "Radians", "Prompt": "rad", "Scale": "0.017453293", "Base": "0", "Order": "1"},
         "Item4": {"Name": "Grads", "Prompt": "g", "Scale": "1.111111111", "Base": "0", "Order": "0"},
-        "Item5": {"Name": "Minutes", "Prompt": "", "Scale": "60", "Base": "0", "Order": "0"},
+        "Item5": {"Name": "Minutes", "Prompt": "min", "Scale": "60", "Base": "0", "Order": "0"},
         "Item6": {"Name": "Right Angles", "Prompt": "L", "Scale": "1.111111111", "Base": "0", "Order": "0"},
-        "Item7": {"Name": "Seconds", "Prompt": "&quot;", "Scale": "3600", "Base": "0", "Order": "0"}
+        "Item7": {"Name": "Seconds", "Prompt": "s;", "Scale": "3600", "Base": "0", "Order": "0"}
       },
       "Angular Velocity": {
         "id": {"Name": "Angular Velocity", "Language": "1", "FunctionIndex": "0", "Order": "10", "ViewCount": "10"},
@@ -442,7 +442,7 @@
         "Item29": {"Name": "Kilocalories (IT)", "Prompt": "kcal", "Scale": "0.000238846", "Base": "0", "Order": "0"},
         "Item30": {"Name": "Kilocalories (Mean)", "Prompt": "kcal-mn", "Scale": "0.000238662", "Base": "0", "Order": "0"},
         "Item31": {"Name": "Kilocalories (Thermo-Chemical)", "Prompt": "kcal-th", "Scale": "0.000239006", "Base": "0", "Order": "0"},
-        "Item32": {"Name": "Kilogram Meters", "Prompt": "m", "Scale": "0.101971621", "Base": "0", "Order": "0"},
+        "Item32": {"Name": "Kilogram Meters", "Prompt": "kgf.m", "Scale": "0.101971621", "Base": "0", "Order": "0"},
         "Item33": {"Name": "Kilojoules", "Prompt": "kJ", "Scale": "0.001", "Base": "0", "Order": "0"},
         "Item34": {"Name": "Kilowatt Hours", "Prompt": "kW.min", "Scale": "2.77778E-7", "Base": "0", "Order": "0"},
         "Item35": {"Name": "Kilowatt Minutes", "Prompt": "kW.s", "Scale": "1.66667E-5", "Base": "0", "Order": "0"},
@@ -493,7 +493,7 @@
         "Item4": {"Name": "Pound per Foot", "Prompt": "lb/ft", "Scale": "0.671969", "Base": "0", "Order": "5"},
         "Item5": {"Name": "Pound per Inch", "Prompt": "lb/in", "Scale": "0.0559974", "Base": "0", "Order": "5"},
         "Item6": {"Name": "Pound per Yard", "Prompt": "lb/yd", "Scale": "2.01591", "Base": "0", "Order": "5"},
-        "Item7": {"Name": "Tons per Mile", "Prompt": "ton/mile", "Scale": "1,58393", "Base": "0", "Order": "5"},
+        "Item7": {"Name": "Tons per Mile", "Prompt": "ton/mile", "Scale": "1.58393", "Base": "0", "Order": "5"},
         "Item8": {"Name": "Tons per Yard", "Prompt": "ton/yd", "Scale": "0.000899958", "Base": "0", "Order": "5"}
       },
       "Luminance": {
@@ -714,10 +714,10 @@
         "Item15": {"Name": "peta", "Prompt": "P", "Scale": "1E-15", "Base": "0", "Order": "1"},
         "Item16": {"Name": "pico", "Prompt": "p", "Scale": "1000000000000", "Base": "0", "Order": "1"},
         "Item17": {"Name": "tera", "Prompt": "T", "Scale": "1E-12", "Base": "0", "Order": "1"},
-        "Item18": {"Name": "yocto", "Prompt": "m", "Scale": "1E24", "Base": "0", "Order": "1"},
-        "Item19": {"Name": "yotta", "Prompt": "m", "Scale": "1E-24", "Base": "0", "Order": "1"},
-        "Item20": {"Name": "zepto", "Prompt": "m", "Scale": "1E21", "Base": "0", "Order": "1"},
-        "Item21": {"Name": "zetta", "Prompt": "m", "Scale": "1E-21", "Base": "0", "Order": "1"}
+        "Item18": {"Name": "yocto", "Prompt": "y", "Scale": "1E24", "Base": "0", "Order": "1"},
+        "Item19": {"Name": "yotta", "Prompt": "Y", "Scale": "1E-24", "Base": "0", "Order": "1"},
+        "Item20": {"Name": "zepto", "Prompt": "z", "Scale": "1E21", "Base": "0", "Order": "1"},
+        "Item21": {"Name": "zetta", "Prompt": "Z", "Scale": "1E-21", "Base": "0", "Order": "1"}
       },
       "Pressure;Weight per unit of area": {
         "id": {"Name": "Pressure;Weight per unit of area", "Language": "1", "FunctionIndex": "0", "Order": "0", "ViewCount": "2006101312"},
@@ -919,8 +919,8 @@
         "Item22": {"Name": "Miles per Hour", "Prompt": "mile/h", "Scale": "2.236936292", "Base": "0", "Order": "5"},
         "Item23": {"Name": "Miles per Minute", "Prompt": "mile/min", "Scale": "0.037282272", "Base": "0", "Order": "5"},
         "Item24": {"Name": "Miles per Second", "Prompt": "mile/s", "Scale": "0.000621371", "Base": "0", "Order": "5"},
-        "Item25": {"Name": "Millimeters per Second", "Prompt": "m", "Scale": "1000", "Base": "0", "Order": "5"},
-        "Item26": {"Name": "Speed of Light", "Prompt": "m", "Scale": "3.33564E-9", "Base": "0", "Order": "5"},
+        "Item25": {"Name": "Millimeters per Second", "Prompt": "mm/s", "Scale": "1000", "Base": "0", "Order": "5"},
+        "Item26": {"Name": "Speed of Light", "Prompt": "Speed of Light", "Scale": "3.33564E-9", "Base": "0", "Order": "5"},
         "Item27": {"Name": "Speed of Sound (Dry Air at Sea Level)", "Prompt": "Speed of Sound", "Scale": "1", "Base": "0", "Order": "5"},
         "Item28": {"Name": "UK Sea Mile per Hour", "Prompt": "UK Knot", "Scale": "1.941753052", "Base": "0", "Order": "5"},
         "Item29": {"Name": "US Sea Mile per Hour", "Prompt": "US Knot", "Scale": "1.943843048", "Base": "0", "Order": "5"},
