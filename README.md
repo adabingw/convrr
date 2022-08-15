@@ -2,5 +2,4 @@
 
 ![alt text](https://i.imgur.com/EY8Ydcu.png)
 
-Unit conversion desktop application written with ElectronJS and ReactJS.
-
+<h2 align="center">Unit and currency conversion desktop application written with ElectronJS and ReactJS and uses Exchangerates API.</h2>
