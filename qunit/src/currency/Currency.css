@@ -1,0 +1,49 @@
+.currencyRow {
+    display: flex; 
+    flex-direction: row; 
+}
+
+.currencyPrompt {
+    width: 15vw;
+    color: #404040 !important;
+}
+
+.currencyOption {
+    margin-left: 20px;
+}
+
+.currencyCol {
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.option {
+    font-size: 15px;
+    width: 350px;
+    border: 0px solid white;
+}
+
+#from-drop {
+    margin-top: 25px;
+}
+
+.option:active {
+    outline: 0px;
+}
+
+.option:focus {
+    outline: 0px;
+}
+
+.option::selection {
+    outline: 0px;
+}
+
+.option:focus-visible {
+    outline: 0px;
+}
+
+.currencyTitle {
+    font-weight: bold;
+}

@@ -1,0 +1,57 @@
+.currency {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin-top: 30vh;
+    margin-left: 10vw;
+}
+
+.point {
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}
+
+.convert {
+    font-size: 15px; 
+    padding: 8px; 
+    border: 1px solid black; 
+    border-radius: 12px;
+}
+
+.convert:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.resultModal {
+    background-color: white;
+    width: 30vw;
+    margin-top: 40vh;
+    padding: 10px;
+    margin-left: 35vw;
+    border: 1px solid black;
+    border-radius: 1%;
+  }
+  
+.resultModal:active {
+    border: 1px solid black;
+    outline: 0px;
+}
+
+.resultModal:focus {
+    border: 1px solid black;
+    outline: 0px;
+}
+
+.resultModal::selection {
+    border: 1px solid black;
+    outline: 0px;
+}
+
+.resultModal:focus-visible {
+    border: 1px solid black;
+    outline: 0px;
+}

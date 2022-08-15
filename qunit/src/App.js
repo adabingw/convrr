@@ -10,11 +10,14 @@ import { useState } from "react";
 import React from "react";
 import Button from "./utils/Button"
 import QUnit from "./unit/QUnit.js"
-
-let data = require('./data/units.json');
+import QCurrency from "./currency/QCurrency.js"
 
 function App() {
   const [active, setActive] = useState("1");
+
+  function setActiveTab(tab) {
+    setActive(tab)
+  }
 
   const getActiveTab = (index) => {
       let current = <div><p>{active}</p></div>
@@ -23,7 +26,8 @@ function App() {
           current = <QUnit />
           break;
         case 2:
-          current = <div><p>shiho sakurashiro</p></div> 
+          current = <QCurrency />
+          // current = <div><h6>under construction :3</h6></div>
           break; 
         case 3: 
           current = <div className="about-div">
