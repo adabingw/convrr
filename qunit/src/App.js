@@ -26,8 +26,8 @@ function App() {
           current = <QUnit />
           break;
         case 2:
-          current = <QCurrency />
-          // current = <div><h6>under construction :3</h6></div>
+          // current = <QCurrency />
+          current = <div className="unfortunate"><h6>Unfortunately, this feature isn't available due to limited resources ;-;</h6></div>
           break; 
         case 3: 
           current = <div className="about-div">

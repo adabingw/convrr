@@ -1,7 +1,9 @@
 {
   "name": "qunit",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Ada Wang",
+  "description": "Unit and currency conversion desktop application written with ElectronJS and ReactJS and uses Exchangerates API.",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
