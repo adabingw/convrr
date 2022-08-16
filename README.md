@@ -1,3 +1,3 @@
-# Convrr
+![alt text](https://i.imgur.com/EY8Ydcu.png)
 
-Unit conversion desktop application written with ElectronJS and ReactJS.
+<p>Unit and currency conversion desktop application written with ElectronJS and ReactJS and uses <a href="https://exchangeratesapi.io/">Exchangerates API.</a></p>
