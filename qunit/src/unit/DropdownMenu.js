@@ -82,6 +82,19 @@ function DropdownMenu(props) {
 
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
       Object.keys(dataContent).map((oneKey, i) => {
+        let p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+        if (String(dataContent[oneKey]["Prompt"]).includes('^')) {
+          p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+          let unitPrompt = dataContent[oneKey]["Prompt"]
+          let split = unitPrompt.split('^') 
+          let splitNum = parseInt(split[1])
+          let splitAfterNum = split[1].split(String(parseInt(i)))
+          if (splitAfterNum[1] != undefined) {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0] + splitNum + <sup>{splitNum} </sup> + splitAfterNum[1] + ")"}</p>
+          } else {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0] + splitNum + <sup>{splitNum} </sup> + ")"}</p>
+          }
+        }
           if (oneKey != "id") {
             if (i == f) {
               unitListComponents.push(
@@ -89,7 +102,7 @@ function DropdownMenu(props) {
                 <Container>
                     <Row>
                     <Col xs={6} className="unit">
-                        <p id="unitname" className="colour">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                        {p}
                     </Col>
                     <Col xs={6} className="val">
                         <input type="number" name="name" defaultValue={newThing} id="textfield"
@@ -235,14 +248,33 @@ function DropdownMenu(props) {
 
     let unitListComponents = []
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
+      
       Object.keys(dataContent).map((oneKey, i) => {
+        let p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+        if (String(dataContent[oneKey]["Prompt"]).includes('^')) {
+          p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+          let unitPrompt = dataContent[oneKey]["Prompt"]
+          let split = unitPrompt.split('^') 
+          let splitNum = parseInt(split[1])
+          let splitAfterNum = split[1].split(String(parseInt(i)))
+          console.log("222222222")
+          console.log("unitPrompt", unitPrompt)
+          console.log("split", split)
+          console.log("splitNum", splitNum)
+          console.log("splitAfterNum", splitAfterNum)
+          if (splitAfterNum[1] != undefined) {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup>{splitAfterNum[1] + ")"}</p>
+          } else {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup> { ")"}</p>
+          }
+        }
         if (oneKey != "id") {
             unitListComponents.push(
               <div className="flexUnit">
               <Container>
                   <Row>
                   <Col xs={6} className="unit">
-                      <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                      {p}
                   </Col>
                   <Col xs={6} className="val">
                       <input type="number" name="name" defaultValue={ Number(dataContent[oneKey]["Scale"]) - Number(dataContent[oneKey]["Base"]) } id="textfield"
@@ -313,13 +345,30 @@ function DropdownMenu(props) {
     dataContent = data[dataTitles[index]]
 
     Object.keys(dataContent).map((oneKey, i) => {
+      let p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+        if (String(dataContent[oneKey]["Prompt"]).includes('^')) {
+          p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+          let unitPrompt = dataContent[oneKey]["Prompt"]
+          let split = unitPrompt.split('^') 
+          let splitNum = parseInt(split[1])
+          let splitAfterNum = split[1].split(String(parseInt(i)))
+          console.log("unitPrompt", unitPrompt)
+          console.log("split", split)
+          console.log("splitNum", splitNum)
+          console.log("splitAfterNum", splitAfterNum)
+          if (splitAfterNum[1] != undefined) {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0] + <sup>{splitNum} </sup> + splitAfterNum[1] + ")"}</p>
+          } else {
+            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0] + <sup>{splitNum} </sup> + ")"}</p>
+          }
+        }
       if (oneKey != "id") {
             unitListComponents.push(
               <div className="flexUnit">
               <Container>
                   <Row>
                   <Col xs={6} className="unit">
-                      <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                      {p}
                   </Col>
                   <Col xs={6} className="val">
                       <input type="number" name="name" defaultValue={ Number(dataContent[oneKey]["Scale"]) - Number(dataContent[oneKey]["Base"]) } id="textfield"

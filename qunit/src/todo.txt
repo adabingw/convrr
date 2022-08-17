@@ -1,0 +1,8 @@
+# exponent representation ✓
+# favourites tabs
+# scroll bar
+# wiki
+# fuzzy search
+# typos
+
+** port to ConvrrIO
