@@ -34,7 +34,6 @@ function App() {
                       <h3 className="about-header">ABOUT ME</h3>
                       <p className="about">
                         Hello! My name is Ada and I'm a Software Engineering student at the University of Waterloo. <br /> <br />
-                        QUnit is a fast unit conversion app created to group all unit conversion together in one bundle. <br /> <br />
                         More features soon to come! <br /> <br />
                       </p>
                     </div>
