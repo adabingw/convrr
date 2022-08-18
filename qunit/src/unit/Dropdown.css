@@ -54,3 +54,20 @@
 .colour {
     background-color: #c2c1c0;
 }
+
+.favourite {
+    margin-left: 15px;
+}
+
+.item {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
