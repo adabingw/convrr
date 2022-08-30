@@ -7,6 +7,9 @@ import { useState } from "react";
 import React from "react";
 import TextField from "@material-ui/core/TextField";
 import DropdownMenu from "./DropdownMenu.js"
+import fuzzysort from 'fuzzysort'
+import Fuse from 'fuse.js'
+
 
 let data = require('../data/units.json');
 
@@ -165,11 +168,18 @@ function QUnit(props) {
   
         // eslint-disable-next-line no-loop-func
         Object.keys(dataContent).map((oneKey, i) => {
+          console.log(dataContent[oneKey])
+
           if (oneKey != "id") {
+
             if (String(input).length == 1) {
-                if (dataContent[oneKey]["Prompt"] == input) {
+                if (dataContent[oneKey]["Prompt"] == input || String(dataContent[oneKey]["Prompt"]).includes(input)) {
                   search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
                 }
+
+                // console.log(dataContent[oneKey]["Prompt"], input)
+                // console.log("fuzz: ", fuzzysort.go(input, dataContent[oneKey]["Prompt"]))
+
             } else {
                 if (dataContent[oneKey]["Name"].toLowerCase() == input.toLowerCase()) {
                   search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
@@ -177,6 +187,17 @@ function QUnit(props) {
       
                 if (dataContent[oneKey]["Prompt"].toLowerCase() == input.toLowerCase()) {
                   search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                }
+
+                const res = fuzzysort.go(input, [dataContent[oneKey]["Name"]])
+                const res2 = fuzzysort.go(input, [dataContent[oneKey]["Prompt"]])
+
+                if (res.length != 0 && res[0].score > -15) {
+                    search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                }
+
+                if (res2.length != 0 && res2[0].score > -15) {
+                    search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
                 }
             }
           }
