@@ -3,7 +3,12 @@
 <p>Unit and currency conversion desktop application written with ElectronJS and ReactJS and uses <a href="https://exchangeratesapi.io/">Exchangerates API.</a></p>
 
 # User interface
-<img src="https://imgur.com/hBfYMVX.png" alt="convrr1" width="800"/>
-![alt text](https://imgur.com/hBfYMVX.png)
-![alt text](https://imgur.com/tdzSyRS.png)
-![alt_text](https://imgur.com/rTGJpgl.png)
+<img src="https://imgur.com/hBfYMVX.png" alt="interface" width="800"/>
+
+<p> Dropdown of units </p>
+
+<img src="https://imgur.com/tdzSyRS.png" alt="units" width="800"/>
+
+<p> Converting pounds </p>
+
+<img src="https://imgur.com/rTGJpgl.png" alt="converting pounds" width="800"/>
