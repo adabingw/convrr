@@ -5,5 +5,4 @@
 # User interface
 ![alt text](https://imgur.com/hBfYMVX.png)
 ![alt text](https://imgur.com/tdzSyRS.png)
-<p> Direct conversion </p> <br>
 ![alt_text](https://imgur.com/rTGJpgl.png)
