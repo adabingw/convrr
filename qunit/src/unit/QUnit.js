@@ -8,7 +8,6 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import DropdownMenu from "./DropdownMenu.js"
 import fuzzysort from 'fuzzysort'
-import Fuse from 'fuse.js'
 
 
 let data = require('../data/units.json');
@@ -86,11 +85,12 @@ function QUnit(props) {
           let e = false;
           let esign = false;
           if (lowerEye.indexOf('e') != -1) {
-            e = (String(lowerEye).charAt(lowerEye.indexOf('e') + 1) >= '0' || String(lowerEye).charAt(lowerEye.indexOf('e') + 1) <= '9')
+            e = ((String(lowerEye).charAt(lowerEye.indexOf('e') + 1) >= '0' && String(lowerEye).charAt(lowerEye.indexOf('e') + 1) <= '9')
+                      && String(lowerEye).charAt(lowerEye.indexOf('e') + 1) != ' ')
             esign = ((String(lowerEye).charAt(lowerEye.indexOf('e') + 1) == '+' || String(lowerEye).charAt(lowerEye.indexOf('e') + 1) == '-')
                         && !isNaN(String(lowerEye).charAt(lowerEye.indexOf('e') + 2)))
           }
-    
+
           if (lowerEye.indexOf('e') != -1) {
               if (e) {
                 let lowerEye2 = lowerEye.slice(lowerEye.indexOf('e') + 1);
@@ -161,44 +161,64 @@ function QUnit(props) {
         const lower_name = name.map(element => { return element.toLowerCase(); });
         let dataContent = data[title]
   
-        if (lower_name.indexOf(String(input).toLowerCase()) != -1) {
-          console.log(input, " in ", name)
-          search_list[title] = "Category"
+        if (String(input).length != 1) {
+          const resTitle = fuzzysort.go(input, [title])
+          if (resTitle.length != 0) {
+            if (resTitle[0].score > -20) {
+              search_list[title] = "Category"
+            }
+          }
+          if (lower_name.indexOf(String(input).toLowerCase()) != -1) {
+            search_list[title] = "Category"
+          }
         }
+
+        let score = -100;
   
         // eslint-disable-next-line no-loop-func
         Object.keys(dataContent).map((oneKey, i) => {
-          console.log(dataContent[oneKey])
-
           if (oneKey != "id") {
 
             if (String(input).length == 1) {
-                if (dataContent[oneKey]["Prompt"] == input || String(dataContent[oneKey]["Prompt"]).includes(input)) {
+                if (dataContent[oneKey]["Prompt"] == input) {
                   search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
                 }
-
-                // console.log(dataContent[oneKey]["Prompt"], input)
-                // console.log("fuzz: ", fuzzysort.go(input, dataContent[oneKey]["Prompt"]))
-
             } else {
-                if (dataContent[oneKey]["Name"].toLowerCase() == input.toLowerCase()) {
-                  search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
-                }
-      
-                if (dataContent[oneKey]["Prompt"].toLowerCase() == input.toLowerCase()) {
-                  search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
-                }
-
                 const res = fuzzysort.go(input, [dataContent[oneKey]["Name"]])
                 const res2 = fuzzysort.go(input, [dataContent[oneKey]["Prompt"]])
-
-                if (res.length != 0 && res[0].score > -15) {
-                    search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                if (res.length != 0) {
+                    if (res[0].score > -15 && res[0].score > score) {
+                        console.log(score, res[0].score, res[0])
+                        score = res[0].score 
+                        search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                    }
                 }
 
-                if (res2.length != 0 && res2[0].score > -15) {
-                    search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                if (res2.length != 0) {
+                    if (res2[0].score > -15 && res2[0].score > score) {
+                        console.log(score, res2[0].score, res2[0])
+                        score = res2[0].score
+                        search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                    }
                 }
+
+                // if (dataContent[oneKey]["Prompt"].toLowerCase() == input.toLowerCase()) {
+
+                //   console.log(search_list[title])
+                //   console.log("1: ", ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]])
+                //   search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                // } else if (dataContent[oneKey]["Name"].toLowerCase() == input.toLowerCase()) {
+                //   console.log("2: ", ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]])
+                //   search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                // } else {
+                //   if (res.length != 0 && res[0].score > -15) {
+                //       search_list[title] = ["Name", dataContent[oneKey]["Name"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                //   }
+
+                //   if (res2.length != 0 && res2[0].score > -15) {
+                //       search_list[title] = ["Prompt", dataContent[oneKey]["Prompt"], i, dataContent[oneKey]["Scale"], dataContent[oneKey]["Base"]]
+                //   }
+                // }
             }
           }
         })

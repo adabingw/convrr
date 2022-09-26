@@ -49,8 +49,8 @@ function App() {
 
   return (
     <div className="App">
-      <Container>
-        <Row >
+      <Container className="p-0">
+        <Row>
           <Col xs={3} className="one">
             <div className="menuFlex">
               <Button type="home" id="1" onClick={(()=>updateRefresh())} text="CONVRR" />

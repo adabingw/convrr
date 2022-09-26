@@ -27,7 +27,7 @@ function DropdownMenu(props) {
   parseDropdown()
 
   // states
-  const [focus, setFocus] = useState(0); 
+  const [focus, setFocus] = useState(1); 
   const [selectedItem, setSelectedItem] = useState(dataTitles[0]);
   const [list, setList] = useState(changeSelectedItem(0, 0))
   const [curr, setCurr] = useState(0);
@@ -57,6 +57,7 @@ function DropdownMenu(props) {
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   function handleKeyPress(index, unit, event, s, f, b) {
+      setFocus(f)
       if(event.key === 'Enter'){
           convert(index, unit, event, s, f, b, null, null, 0)
       }
@@ -73,13 +74,10 @@ function DropdownMenu(props) {
   // TODO: change focus
   function handleKeyDown(event) {
       // up: 38; down: 40
-      console.log(event.keyCode)
       if (event.keyCode == 38) {
-          console.log("KEY UP ARROW")
           event.preventDefault()
           // setFocus(focus + 1)
       } else if (event.keyCode == 40) {
-          console.log("KEY DOWN ARROW")
           event.preventDefault()
           // setFocus(focus - 1)
       }
@@ -135,17 +133,37 @@ function DropdownMenu(props) {
 
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
       Object.keys(dataContent).map((oneKey, i) => {
-          let p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
-          console.log("FOCUS == I: ", focus == i)
+          let p = <p id="unitname" 
+            title={"1" + dataContent[Object.keys(dataContent)[f]]["Prompt"] + " = " + 
+            dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[f]]["Scale"] +
+            dataContent[oneKey]["Prompt"]}>
+            {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+          </p>
+          if (dataContent["id"]["FunctionIndex"] == 1) {
+            p = <p id="unitname" 
+                title={"1" + dataContent[Object.keys(dataContent)[1]]["Prompt"] + " = " + 
+                dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[1]]["Scale"] + 
+                dataContent[oneKey]["Prompt"] + " - " + Number(dataContent[oneKey]["Base"])}>
+                {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+            </p>
+          }
           if (String(dataContent[oneKey]["Prompt"]).includes('^')) {
             let unitPrompt = dataContent[oneKey]["Prompt"]
             let split = unitPrompt.split('^') 
             let splitNum = parseInt(split[1])
             let splitAfterNum = split[1].split(String(parseInt(splitNum)))
             if (splitAfterNum[1] != undefined) {
-              p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup>{splitAfterNum[1] + ")"}</p>
+              p = <p id="unitname" 
+                title={"1" + dataContent[Object.keys(dataContent)[f]]["Prompt"] + " = " + 
+                dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[f]]["Scale"] + dataContent[oneKey]["Prompt"]}>
+                {dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup>{splitAfterNum[1] + ")"}
+              </p>
             } else {
-              p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup> { ")"}</p>
+              p = <p id="unitname" 
+                title={"1" + dataContent[Object.keys(dataContent)[f]]["Prompt"] + " = " + 
+                dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[f]]["Scale"] + dataContent[oneKey]["Prompt"]}>
+                {dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup> { ")"}
+              </p>
             }
           }
           if (oneKey != "id") {
@@ -158,8 +176,9 @@ function DropdownMenu(props) {
                         {p}
                     </Col>
                     <Col xs={6} className="val">
-                        <input type="number" name="name" defaultValue={newThing} id="textfield"
+                        <input type="text" pattern="\d*" name="name" defaultValue={newThing} id="textfield"
                         key={newThing}
+                        maxLength="15"
                         onChange={(e) => textChange(i)}
                         onClick={(e) => textFocus(e)}
                         onFocus={(e) => textFocus(e)}
@@ -182,10 +201,11 @@ function DropdownMenu(props) {
                         {p}
                     </Col>
                     <Col xs={6} className="val">
-                        <input type="number" name="name" 
+                        <input type="text" pattern="\d*" name="name" 
                         defaultValue={(parseFloat((dataContent[oneKey]["Scale"]) * newThing) / s) - Number(dataContent[oneKey]["Base"] - b * (dataContent[oneKey]["Scale"] / s)) } 
                         id="textfield"
                         key={dataContent[oneKey]["Scale"] * newThing / s}
+                        maxLength="15"
                         onChange={(e) => textChange(i)}
                         onClick={(e) => textFocus(e)}
                         onFocus={(e) => textFocus(e)}
@@ -257,12 +277,15 @@ function DropdownMenu(props) {
               <Container>
                   <Row>
                   <Col xs={6} className="unit">
-                      <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                      <p id="unitname" title={dataContent[oneKey]["Name"]}>
+                        {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+                      </p>
                   </Col>
                   <Col xs={6} className="val">
-                      <input type="number" name="name" defaultValue={sgData[i - 1]} id="textfield"
+                      <input type="text" pattern="\d*" name="name" defaultValue={sgData[i - 1]} id="textfield"
                       key={sgData[i - 1]}
                       onChange={(e) => textChange(i)}
+                      maxLength="15"
                       onClick={(e) => textFocus(e)}
                       onFocus={(e) => textFocus(e)}
                       onBlur={(e) => convert(index, dataContent[oneKey]["Name"], e, dataContent[oneKey]["Scale"], i, dataContent[oneKey]["Base"], null, null, 0)}
@@ -289,7 +312,6 @@ function DropdownMenu(props) {
    * @param {*} index index of selected item
    */
   function changeSelectedItem(index, initial) {
-    console.log("FOCUS: ", focus)
     if (initial == 1) {
       setSelectedItem(dataTitles[index])
     }
@@ -298,18 +320,38 @@ function DropdownMenu(props) {
 
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {  
       Object.keys(dataContent).map((oneKey, i) => {
-        let p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+        let p = <p id="unitname" 
+            title={"1" + dataContent[Object.keys(dataContent)[1]]["Prompt"] + " = " + 
+            dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[1]]["Scale"] + 
+            dataContent[oneKey]["Prompt"]}>
+            {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+        </p>
+        if (dataContent["id"]["FunctionIndex"] == 1) {
+          p = <p id="unitname" 
+              title={"1" + dataContent[Object.keys(dataContent)[1]]["Prompt"] + " = " + 
+              dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[1]]["Scale"] + 
+              dataContent[oneKey]["Prompt"] + " - " + Number(dataContent[oneKey]["Base"])}>
+              {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+          </p>
+        }
         if (String(dataContent[oneKey]["Prompt"]).includes('^')) {
           let unitPrompt = dataContent[oneKey]["Prompt"]
           let split = unitPrompt.split('^') 
           let splitNum = parseInt(split[1])
           let splitAfterNum = split[1].split(String(parseInt(splitNum)))
           if (splitAfterNum[1] != undefined) {
-            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup>{splitAfterNum[1] + ")"}</p>
+            p = <p id="unitname"
+            title={dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[1]]["Scale"] +
+            dataContent[oneKey]["Prompt"] + " = 1" + dataContent[Object.keys(dataContent)[1]]["Prompt"]}>
+            {dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup>{splitAfterNum[1] + ")"}</p>
           } else {
-            p = <p id="unitname">{dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup> { ")"}</p>
+            p = <p id="unitname"
+            title={dataContent[oneKey]["Scale"]/dataContent[Object.keys(dataContent)[1]]["Scale"] +
+            dataContent[oneKey]["Prompt"] + " = 1" + dataContent[Object.keys(dataContent)[1]]["Prompt"]}>
+            {dataContent[oneKey]["Name"] + " (" + split[0]}<sup>{splitNum} </sup> { ")"}</p>
           }
         }
+
         if (oneKey != "id") {
             unitListComponents.push(
               <div className="flexUnit">
@@ -319,9 +361,10 @@ function DropdownMenu(props) {
                       {p}
                   </Col>
                   <Col xs={6} className="val">
-                      <input type="number" name="name" 
+                      <input type="text" pattern="\d*" name="name" 
                       defaultValue={ Number(dataContent[oneKey]["Scale"]) - Number(dataContent[oneKey]["Base"]) } id="textfield"
                       key={ dataContent[oneKey]["Scale"] }
+                      maxLength="15"
                       onChange={(e) => textChange(i)}
                       onClick={(e) => textFocus(e)}
                       onFocus={(e) => textFocus(e)}
@@ -351,11 +394,14 @@ function DropdownMenu(props) {
               <Container>
                   <Row>
                   <Col xs={6} className="unit">
-                      <p id="unitname">{dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}</p>
+                      <p id="unitname" >
+                        {dataContent[oneKey]["Name"] + " (" + dataContent[oneKey]["Prompt"] + ")"}
+                      </p>
                   </Col>
                   <Col xs={6} className="val">
-                      <input type="number" name="name" defaultValue={sgData[i - 1]} id="textfield"
+                      <input type="text" pattern="\d*" name="name" defaultValue={sgData[i - 1]} id="textfield"
                       key={sgData[i - 1]}
+                      maxLength="15"
                       onChange={(e) => textChange(i)}
                       onClick={(e) => textFocus(e)}
                       onFocus={(e) => textFocus(e)}

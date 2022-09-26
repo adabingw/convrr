@@ -57,8 +57,6 @@ function QCurrency() {
                 let result = dataJson["result"]
                 let date = dataJson["date"]
                 let rate = dataJson["info"]["rate"]
-                console.log("result: ", result)
-                console.log("date: ", date)
                 setResultAmount(result)
                 setDate(date)
                 setRate(rate)
@@ -94,7 +92,6 @@ function QCurrency() {
             <h4 className="convert"
             onClick={()=> {
                 setStatus(!status)
-                console.log("convert pressed")
                 setOpenLoad(true)
                 convert()
             }}>CONVERT</h4>
