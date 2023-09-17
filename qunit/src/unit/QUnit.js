@@ -103,8 +103,8 @@ function QUnit(props) {
               if (typeof afterNum[1] != "undefined") {
                 // if our input has an equal sign
                 if (afterNum[1].indexOf('=') != -1) {
-                  var unit = String(afterNum[1]).substr(0, String(afterNum[1]).indexOf('=')); 
-                  var result = String(afterNum[1].substr(String(afterNum[1]).indexOf('?') + 1));
+                  let unit = String(afterNum[1]).substr(0, String(afterNum[1]).indexOf('=')); 
+                  let result = String(afterNum[1].substr(String(afterNum[1]).indexOf('?') + 1));
                   input.push(unit)
                   input.push(result)
                 } else {
@@ -117,8 +117,8 @@ function QUnit(props) {
           } else if (afterNum[1] != "" && !e) {
               // if our input has an equal sign
               if (afterNum[1].indexOf('=') != -1) {
-                var unit = String(afterNum[1]).substr(0, String(afterNum[1]).indexOf('=')); 
-                var result = String(afterNum[1].substr(String(afterNum[1]).indexOf('?') + 1));
+                let unit = String(afterNum[1]).substr(0, String(afterNum[1]).indexOf('=')); 
+                let result = String(afterNum[1].substr(String(afterNum[1]).indexOf('?') + 1));
                 input.push(unit)
                 input.push(result)
               } else {
@@ -132,8 +132,8 @@ function QUnit(props) {
       } else {
         input.push("1")
         if (i.indexOf('=') != -1) {
-          var unit = i.substr(0, i.indexOf('=')); 
-          var result = i.substr(i.indexOf('?') + 1);
+          let unit = i.substr(0, i.indexOf('=')); 
+          let result = i.substr(i.indexOf('?') + 1);
           input.push(unit)
           input.push(result)
         } else {
