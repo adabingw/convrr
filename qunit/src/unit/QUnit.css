@@ -4,7 +4,7 @@
   color: #404040 !important;
 }
 
-label.Mui-focused {
+/* label.Mui-focused {
   color: #404040 !important;
 }
 
@@ -30,7 +30,7 @@ label.Mui-focused {
 
 .MuiInput-underline:after {
   border-color: #404040;
-}
+} */
 
 div.container {
   margin-right: 0px;
