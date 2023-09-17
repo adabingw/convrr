@@ -71,6 +71,19 @@ function DropdownMenu(props) {
     event.stopPropagation()
   }
 
+  useEffect(() => {
+    let favourites_arr = localStorage.getItem("favourites");
+    if (favourites_arr !== undefined && favourites_arr !== null) {
+      setFavourites(JSON.parse(favourites_arr));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (favourites !== undefined && favourites.length !== 0 && favourites !== null) {
+      localStorage.setItem("favourites", JSON.stringify(favourites));
+    }
+  }, [favourites]);
+
   // TODO: change focus
   function handleKeyDown(event) {
       // up: 38; down: 40

@@ -29,6 +29,7 @@
 
 #textfield {
     width: 90vw;
+    height: 30px;
     font-size: 15px;
     max-height: 20px;
     margin-left: 10px;

@@ -1,5 +1,4 @@
 import './Button.css';
-import { useState } from "react";
 import React from "react";
 
 function Button(props) {

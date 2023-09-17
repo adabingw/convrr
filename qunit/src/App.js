@@ -31,16 +31,9 @@ function App() {
           break; 
         case 3: 
           current = <div className="about-div">
-                      <h3 className="about-header">ABOUT ME</h3>
-                      <p className="about">
-                        Hello! My name is Ada and I'm a Software Engineering student at the University of Waterloo. <br /> <br />
-                        More features soon to come! <br /> <br />
-                      </p>
+                      <a href="https://github.com/adabingw/convrr" target="_blank"><i class="fa-brands fa-github fa-2xs"></i></a>
                     </div>
           break; 
-        case 4: 
-          current = <div><p>mai hirose</p></div>
-          break;
         default: 
           current = <QUnit />
       }
@@ -53,11 +46,10 @@ function App() {
         <Row>
           <Col xs={3} className="one">
             <div className="menuFlex">
-              <Button type="home" id="1" onClick={(()=>updateRefresh())} text="CONVRR" />
-              <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="UNITS"/>
-              <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="CURRENCY"/>
-              <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="ABOUT"/>
-              {/* <Button type="button" id="4" onClick={()=>setActiveTab(4)} status={active == "4"} text="G I T H U B"/> */}
+              <Button type="home" id="1" onClick={(()=>updateRefresh())} text="convrr" />
+              <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="units"/>
+              <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="currency"/>
+              <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="about"/>
             </div>
           </Col>
           <Col xs={9} className="two">
