@@ -2,17 +2,21 @@
 
 .App {
   font-family: 'Outfit', sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   padding-right: 0px;
+  display: flex;
+  flex-direction: row;
 }
 
 a {
-  color: black;
-  text-decoration: none;
+  color: black !important;
+  text-decoration: none !important;
 }
 
 i {
   color: black; 
   text-decoration: none;
+  margin-right: 15px;
 }
 
 .no-gutter > [class*='col-'] {
@@ -21,21 +25,23 @@ i {
 }
 
 .one {
-  text-align: center;
   background-color: white;
-  border-right: 1px solid black;
+  border-right: 1px solid #515151;
   min-height: 100vh;
+  min-width: 17vw;
 }
 
 .about-div {
   display: flex; 
   flex-direction: column; 
-  align-items: center;
-  padding-right: 10px; 
-  padding-left: 10px;
+  align-items: left;
+  padding-right: 5vw; 
+  padding-left: 5vw;
   height: 100vh;
+  font-size: 17px;
   justify-content: center;
-  align-items: center;
+  color: black;
+  text-decoration: none;
 }
 
 .about {
@@ -49,44 +55,17 @@ i {
 
 .two {
   background-color: white;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  overflow-y: auto;
+  margin-left: 25px;
+  overflow-y:scroll;
 }
 
 .prompt {
   margin-top: 30px;
-  width: 60vw;
+  width: 100vw;
   color: #404040 !important;
 }
-
-/* label.Mui-focused {
-  color: #404040 !important;
-}
-
-.MuiOutlinedInput-root {
-  border-color: #404040;
-}
-
-.Mui-focused fieldset {
-  border-color: #404040;
-}
-
-.MuiInput-underline:before {
-  border-color: #404040;
-}
-
-.MuiInput-underline:hover:before {
-  border-color: #404040;
-}
-
-.MuiInput-underline-24:hover:not(.MuiInput-disabled-23):not(.MuiInput-focused-22):not(.MuiInput-error-25):before {
-  border-bottom: 2px solid rgb(255, 255, 255) !important;
-}
-
-.MuiInput-underline:after {
-  border-color: #404040;
-} */
 
 div.container {
   margin-right: 0px;
@@ -103,7 +82,7 @@ div.container {
 
 .errModalclose:hover {
   color: #404040; 
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -177,17 +156,6 @@ div.container {
 .styleModal2:focus-visible {
   border: 1px solid black;
   outline: 0px;
-}
-
-.unitList {
-  padding: 8px;
-}
-
-.unitList:hover {
-  background-color: #c2c1c0;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 2px;
 }
 
 .unfortunate {

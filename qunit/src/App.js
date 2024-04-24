@@ -31,7 +31,8 @@ function App() {
           break; 
         case 3: 
           current = <div className="about-div">
-                      <a href="https://github.com/adabingw/convrr" target="_blank"><i class="fa-brands fa-github fa-2xs"></i></a>
+                      <a href="https://github.com/adabingw/convrr" target="_blank"><i class="fa-brands fa-github fa-md"></i>where the code lives.</a>
+                      <a href="https://www.linkedin.com/in/adabingw/" target="_blank"><i class="fa-brands fa-linkedin fa-md"></i>where i am.</a>
                     </div>
           break; 
         default: 
@@ -42,21 +43,17 @@ function App() {
 
   return (
     <div className="App">
-      <Container className="p-0">
-        <Row>
-          <Col xs={3} className="one">
-            <div className="menuFlex">
-              <Button type="home" id="1" onClick={(()=>updateRefresh())} text="convrr" />
-              <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="units"/>
-              <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="currency"/>
-              <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="about"/>
-            </div>
-          </Col>
-          <Col xs={9} className="two">
-            <h1>{getActiveTab(active)}</h1>
-          </Col>
-        </Row>
-      </Container>
+        <div className="one">
+          <div className="menuFlex">
+            <Button type="home" id="1" onClick={(()=>updateRefresh())} text="convrr" />
+            <Button type="button" id="1" onClick={()=>setActiveTab(1)} status={active == "1"} text="units"/>
+            <Button type="button" id="2" onClick={()=>setActiveTab(2)} status={active == "2"} text="currency"/>
+            <Button type="button" id="3" onClick={()=>setActiveTab(3)} status={active == "3"} text="about"/>
+          </div>
+        </div>
+        <div className="two">
+          <h1>{getActiveTab(active)}</h1>
+        </div>
     </div>
   );
 }

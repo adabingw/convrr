@@ -1,36 +1,9 @@
 .prompt {
   margin-top: 30px;
-  width: 60vw;
+  width: 76vw;
   color: #404040 !important;
+  overflow-x: hidden;
 }
-
-/* label.Mui-focused {
-  color: #404040 !important;
-}
-
-.MuiOutlinedInput-root {
-  border-color: #404040;
-}
-
-.Mui-focused fieldset {
-  border-color: #404040;
-}
-
-.MuiInput-underline:before {
-  border-color: #404040;
-}
-
-.MuiInput-underline:hover:before {
-  border-color: #404040;
-}
-
-.MuiInput-underline-24:hover:not(.MuiInput-disabled-23):not(.MuiInput-focused-22):not(.MuiInput-error-25):before {
-  border-bottom: 2px solid rgb(255, 255, 255) !important;
-}
-
-.MuiInput-underline:after {
-  border-color: #404040;
-} */
 
 div.container {
   margin-right: 0px;
@@ -47,7 +20,7 @@ div.container {
 
 .errModalclose:hover {
   color: #404040; 
-  font-weight: bold;
+  font-weight: 400;
   cursor: pointer;
 }
 
@@ -125,11 +98,12 @@ div.container {
 
 .unitList {
   padding: 8px;
+  font-weight: 400;
 }
 
 .unitList:hover {
-  background-color: #c2c1c0;
-  font-weight: bold;
+  font-weight: 500;
+
   cursor: pointer;
   border-radius: 2px;
 }

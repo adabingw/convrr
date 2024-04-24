@@ -19,6 +19,26 @@
     padding-right: 20px;
 }
 
+.searchlabel {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.searchprompt {
+    height: 25px;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+*:focus {
+    outline: none;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+}
+
 .flexUnit {
     display: flex; 
     flex-direction: row;

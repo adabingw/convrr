@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&family=Staatliches&display=swap');
 
 .button {
-    margin-top: 10px;
-    font-size: 1.4vw;
+    font-size: 18px;
     padding-top: 1px; 
     padding-bottom: 1px;
-    padding-left: 2px; 
     padding-right: 2px;
-    margin-left: 3vw; 
-    margin-right: 3vw;
+    margin-left: 1vw; 
+    margin-right: 1vw;
     border-radius: 12px;
 }
 
@@ -18,8 +16,6 @@
 
 .button.activeClass {
     font-size: 1vw;
-    color: white;
-    background-color: #404040;
 }
 
 .button.inactiveClass {
@@ -27,20 +23,20 @@
     border-right: 0px solid white;
     border-top: 0px solid white;
     border-radius: 0%;
-    color: black;
+    color: #818181;
     background-color: white;
 }
 
 .button.inactiveClass:hover {
-    color: #696969;
+    color: #818181;
 }
 
 .home {
-    font-family: 'Staatliches', cursive;
     margin-top: 25px;
-    margin-bottom: 8px;
-    font-size: 4vw !important;
-    font-weight: bolder;
+    margin-bottom: 50px;
+    margin-left: 1vw;
+    font-size: 20px !important;
+    font-weight: bold;
     color: #404040;
 }
 

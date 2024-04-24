@@ -1,8 +1,8 @@
 {
-  "name": "Convrrr",
+  "name": "convrr",
   "version": "0.1.0",
   "private": false,
-  "author": "Ada Wang",
+  "author": "adabingw",
   "description": "Unit and currency conversion desktop application written with ElectronJS and ReactJS and uses Exchangerates API.",
   "dependencies": {
     "@emotion/react": "^11.10.0",
