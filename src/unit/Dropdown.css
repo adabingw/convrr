@@ -44,7 +44,7 @@
     flex-direction: row;
     align-items: center;
     padding-left: 10px;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #a69f94;
 }
 
 #textfield {
@@ -56,16 +56,12 @@
     padding-left: 20px;
     padding-top: 12px; 
     padding-bottom: 12px;
-    border: 1px solid #000000;
+    /* border: 0px solid #a69f94; */
+    border-bottom: 1px solid #a69f94;
     outline: none;
     width: 200px;
     box-shadow: inset 20px 20px #ffffff;
-    border-radius: 12px;
-    /* border-bottom: 1px solid black;
-    border-left: 0px; 
-    border-top: 0px; 
-    border-right: 0px; */
-
+    /* border-radius: 12px; */
 }
 
 #unitname {
@@ -85,7 +81,8 @@
 }
 
 .favourite {
-    margin-left: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .item {

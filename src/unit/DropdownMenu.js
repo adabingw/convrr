@@ -144,6 +144,8 @@ function DropdownMenu(props) {
         break;
     }
 
+    console.log(dataContent['id'])
+
     if (dataContent["id"]["FunctionIndex"] == 0 || dataContent["id"]["FunctionIndex"] == 1) {
       Object.keys(dataContent).map((oneKey, i) => {
           let p = <p id="unitname" 
@@ -452,7 +454,6 @@ function DropdownMenu(props) {
               return (
                 <div>
                     <Dropdown.Item onClick={()=>FavouritesItemClick(title)} className="item">
-                        {title}
                         <Rating className="favourite" 
                               size="small" max={1} value={1}
                               onClick={(event) => {
@@ -466,6 +467,7 @@ function DropdownMenu(props) {
                                 }
                               }}
                         />
+                        {title}
                     </Dropdown.Item>
                 </div>
               )
@@ -483,7 +485,6 @@ function DropdownMenu(props) {
               return (
                 <div>
                     <Dropdown.Item onClick={()=>DropdownItemClick(title, index)} className="item">
-                        {title}
                         <Rating className="favourite" 
                               size="small" max={1} 
                               onClick={(event) => {
@@ -498,6 +499,7 @@ function DropdownMenu(props) {
                               }}
                               value = {favourites.includes(title) ? 1 : 0}
                         />
+                        {title}
                     </Dropdown.Item>
                 </div>
               )

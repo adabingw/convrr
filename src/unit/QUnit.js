@@ -8,6 +8,7 @@ import React from "react";
 import TextField from "@material-ui/core/TextField";
 import DropdownMenu from "./DropdownMenu.js"
 import fuzzysort from 'fuzzysort'
+import { Link } from 'react-router-dom';
 
 
 let data = require('../data/units.json');
@@ -247,7 +248,7 @@ function QUnit(props) {
                   onKeyDown={(e) => handleKeyPress(e)} className="searchprompt"/>
             </div>
                 <DropdownMenu prompt={prompt} val={value} type={type} zombie={zombie}/>
-                  <Modal isOpen={open} className="styleModal2">
+                <Modal isOpen={open} className="styleModal2">
                 <div>
                     {Object.keys(searchResult).map(function(key, index) {
                         if (key !== "input" && key !== "val") {

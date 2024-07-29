@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;600&family=Staatliches&display=swap');
+
+.button {
+    font-size: 16px;
+    padding-top: 5px; 
+    padding-bottom: 5px;
+    padding-right: 2px;
+    margin-left: 1vw; 
+    margin-right: 1vw;
+    border-radius: 12px;
+}
+
+:hover {
+    cursor: pointer;
+}
+
+.activeClass {
+    background-color: #d9d5ce;
+    border-radius: 5px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-size: 16px;
+}
+
+.inactiveClass {
+    border-radius: 0%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    background-color: f7f5f2;
+    color: #818181;
+}
+
+.home {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    padding-left: 0.5vw;
+    margin-left: 1vw;
+    padding-right: 0.5vw;
+    margin-right: 1vw;
+    font-size: 18px !important;
+    color: #313131;
+    border-bottom: 1px solid #8c8477;
+}
+
+.home:hover {
+    cursor: pointer;
+}
